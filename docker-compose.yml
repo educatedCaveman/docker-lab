@@ -20,4 +20,4 @@ services:
       - "80:8080"
       - "443:4443"
     volumes:
-      - "/mnt/mobius/Backup/docker/dev/nginx-proxy-manager:/config:rw"
+      - "/mnt/mobius/Backup/docker/dev/nginx-proxy-manager:/config"
