@@ -5,5 +5,4 @@ services:
     build: .
     ports:
         - "5301:5201"
-  iperf3:
     image: mlabbe/iperf3
