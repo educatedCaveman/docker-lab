@@ -2,8 +2,8 @@
 version: '2.0'
 services:
   iperf3:
-    build: ./iperf3/
+    build: .
     ports:
         - "5301:5201"
-  redis:
+  iperf3:
     image: mlabbe/iperf3
