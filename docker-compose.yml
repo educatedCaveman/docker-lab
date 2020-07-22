@@ -34,9 +34,9 @@ services:
        DISABLE_IPV6: 'true'
     volumes:
       # Make sure this config.json file exists as per instructions above:
-      - /mnt/mobius/Backup/nginx-proxy-manager/config.json:/app/config/production.json
-      - /mnt/mobius/Backup/nginx-proxy-manager/data:/data
-      - /mnt/mobius/Backup/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
+      - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/config.json:/app/config/production.json
+      - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/data:/data
+      - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
     depends_on:
       - nginx-db
   
@@ -49,4 +49,4 @@ services:
       MYSQL_USER: 'npm'
       MYSQL_PASSWORD: 'npm'
     volumes:
-      - /mnt/mobius/Backup/nginx-proxy-manager/data/mysql:/var/lib/mysql
+      - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/data/mysql:/var/lib/mysql
