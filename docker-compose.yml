@@ -29,9 +29,9 @@ services:
       - '443:443'
       # Admin Web Port:
       - '81:81'
-    environment:
-      # Uncomment this if IPv6 is not enabled on your host
-       DISABLE_IPV6: 'true'
+    #environment:
+    #   #Uncomment this if IPv6 is not enabled on your host
+    #   DISABLE_IPV6: 'true'
     volumes:
       # Make sure this config.json file exists as per instructions above:
       - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/config.json:/app/config/production.json
