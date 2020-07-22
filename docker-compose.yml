@@ -8,45 +8,44 @@ services:
     ports:
         - "5201:5201"
 
-  #nginx-proxy-manager:
-  #  image: jlesage/nginx-proxy-manager
-  #  build: .
-  #  ports:
-  #    - "81:8181"
-  #    - "80:8080"
-  #    - "443:4443"
-  #  volumes:
-  #    source: /mnt/mobius/Backup/docker/dev/nginx-proxy-manager
-  #    target: /config
-
   nginx-proxy-manager:
-    image: jc21/nginx-proxy-manager:2
-    restart: always
+    image: jlesage/nginx-proxy-manager
+    build: .
     ports:
-      # Public HTTP Port:
-      - '80:80'
-      # Public HTTPS Port:
-      - '443:443'
-      # Admin Web Port:
-      - '81:81'
-    #environment:
-    #   #Uncomment this if IPv6 is not enabled on your host
-    #   DISABLE_IPV6: 'true'
+      - "81:8181"
+      - "80:8080"
+      - "443:4443"
     volumes:
-      # Make sure this config.json file exists as per instructions above:
-      - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/config.json:/app/config/production.json
-      - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/data:/data
-      - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
-    depends_on:
-      - nginx-db
-  
-  nginx-db:
-    image: jc21/mariadb-aria:10.4
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: 'npm'
-      MYSQL_DATABASE: 'npm'
-      MYSQL_USER: 'npm'
-      MYSQL_PASSWORD: 'npm'
-    volumes:
-      - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/data/mysql:/var/lib/mysql
+      - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager:/config:rw
+
+  #nginx-proxy-manager:
+  #  image: jc21/nginx-proxy-manager:2
+  #  restart: always
+  #  ports:
+  #    # Public HTTP Port:
+  #    - '80:80'
+  #    # Public HTTPS Port:
+  #    - '443:443'
+  #    # Admin Web Port:
+  #    - '81:81'
+  #  #environment:
+  #  #   #Uncomment this if IPv6 is not enabled on your host
+  #  #   DISABLE_IPV6: 'true'
+  #  volumes:
+  #    # Make sure this config.json file exists as per instructions above:
+  #    - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/config.json:/app/config/production.json
+  #    - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/data:/data
+  #    - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
+  #  depends_on:
+  #    - nginx-db
+  #
+  #nginx-db:
+  #  image: jc21/mariadb-aria:10.4
+  #  restart: always
+  #  environment:
+  #    MYSQL_ROOT_PASSWORD: 'npm'
+  #    MYSQL_DATABASE: 'npm'
+  #    MYSQL_USER: 'npm'
+  #    MYSQL_PASSWORD: 'npm'
+  #  volumes:
+  #    - /mnt/mobius/Backup/docker/dev/nginx-proxy-manager/data/mysql:/var/lib/mysql
