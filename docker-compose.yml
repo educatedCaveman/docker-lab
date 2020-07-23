@@ -57,29 +57,18 @@ services:
         - "8998:17442"
     image: tzahi12345/youtubedl-material:latest          
 
-    #TODO: get this working
-  calibre-web:
-    image: linuxserver/calibre-web
-    container_name: calibre-web
+  code-server:
+    image: linuxserver/code-server
+    container_name: code-server
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/New_York
-      - DOCKER_MODS=linuxserver/calibre-web:calibre
+      - TZ=Europe/London
+      - PASSWORD=password #optional
+      - SUDO_PASSWORD=password #optional
+      - PROXY_DOMAIN=code-server.my.domain #optional
     volumes:
-      - /mnt/mobius/Backup/docker/dev/calibre-web/config:/config
-      - /mnt/mobius/Backup/docker/dev/calibre-web/books:/books
+        - /mnt/mobius/Backup/docker/dev/code-server/config:/config
     ports:
-      - 8083:8083
+      - 8443:8443
     restart: unless-stopped
-  
-  shlink_web_client_node:
-    container_name: shlink_web_client_node
-    image: node:12.16.3-alpine
-    command: /bin/sh -c "cd /home/shlink/www && npm install && npm run start"
-    volumes:
-      - /mnt/mobius/Backup/docker/dev/shlink/www:/home/shlink/www
-    ports:
-      - 3000:3000
-      - 56745:56745
-      - 5000:5000
