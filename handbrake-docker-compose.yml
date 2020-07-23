@@ -1,0 +1,14 @@
+---
+version: '2.4'
+services:
+  
+  handbrake:
+    image: jlesage/handbrake
+    build: .
+    ports:
+      - "5800:5800"
+    volumes:
+      - /mnt/mobius/Backup/docker/dev/handbrake:/config:rw
+      - /mnt/mobius/staging/handbrake/storage:/storage:ro
+      - /mnt/mobius/staging/handbrake/watch:/watch:rw
+      - /mnt/mobius/staging/handbrake/output:/output:rw

@@ -1,0 +1,32 @@
+---
+version: '2.4'
+services:
+  
+  ytdl_material:
+    environment: 
+        ALLOW_CONFIG_MUTATIONS: 'true'
+    restart: always
+    volumes:
+        - /mnt/mobius/Backup/docker/dev/youtube-dl/appdata:/app/appdata
+        - /mnt/mobius/staging/youtube-dl/audio:/app/audio
+        - /mnt/mobius/staging/youtube-dl/video:/app/video
+        - /mnt/mobius/Backup/docker/dev/youtube-dl/subscriptions:/app/subscriptions
+    ports:
+        - "8998:17442"
+    image: tzahi12345/youtubedl-material:latest          
+
+  code-server:
+    image: linuxserver/code-server
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+      - PASSWORD=password #optional
+      - SUDO_PASSWORD=password #optional
+      #- PROXY_DOMAIN=code-server.my.domain #optional
+    volumes:
+        - /mnt/mobius/Backup/docker/dev/code-server/config:/config
+    ports:
+      - 9443:8443
+    restart: unless-stopped
