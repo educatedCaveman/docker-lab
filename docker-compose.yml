@@ -57,6 +57,7 @@ services:
         - "8998:17442"
     image: tzahi12345/youtubedl-material:latest          
 
+    #TODO: get this working
   calibre-web:
     image: linuxserver/calibre-web
     container_name: calibre-web
@@ -71,4 +72,20 @@ services:
     ports:
       - 8083:8083
     restart: unless-stopped
-    
+  
+  redmine:
+    image: redmine
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      REDMINE_DB_MYSQL: db
+      REDMINE_DB_PASSWORD: example
+      REDMINE_SECRET_KEY_BASE: supersecretkey
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: redmine
