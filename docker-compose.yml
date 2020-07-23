@@ -33,6 +33,7 @@ services:
       # WEBPASSWORD: 'set a secure password here or it will be random'
     # Volumes store your data between container upgrades
     volumes:
+        #TODO: make these be my files in git
        - './etc-pihole/:/etc/pihole/'
        - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
     dns:
@@ -42,3 +43,19 @@ services:
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
+
+    ytdl_material:
+        environment: 
+            ALLOW_CONFIG_MUTATIONS: 'true'
+        restart: always
+        volumes:
+            - /mnt/mobius/Backup/docker/dev/youtube-dl/appdata:/app/appdata
+            - /mnt/mobius/staging/youtube-dl/audio:/app/audio
+            - /mnt/mobius/staging/youtube-dl/video:/app/video
+            - /mnt/mobius/Backup/docker/dev/youtube-dl/subscriptions:/app/subscriptions
+        ports:
+            - "8998:17442"
+        image: tzahi12345/youtubedl-material:latest          
+
+
+        
