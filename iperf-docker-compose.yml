@@ -2,8 +2,62 @@
 version: '2.4'
 services:
   
-  iperf3:
+  iperf3-01:
     image: mlabbe/iperf3
     build: .
     ports:
         - "5201:5201"
+  
+  iperf3-02:
+    image: mlabbe/iperf3
+    build: .
+    ports:
+        - "5202:5201"
+  
+  iperf3-03:
+    image: mlabbe/iperf3
+    build: .
+    ports:
+        - "5203:5201"
+  
+  iperf3-04:
+    image: mlabbe/iperf3
+    build: .
+    ports:
+        - "5204:5201"
+  
+  iperf3-05:
+    image: mlabbe/iperf3
+    build: .
+    ports:
+        - "5205:5201"
+  
+  iperf3-06:
+    image: mlabbe/iperf3
+    build: .
+    ports:
+        - "5206:5201"
+  
+  iperf3-07:
+    image: mlabbe/iperf3
+    build: .
+    ports:
+        - "5207:5201"
+  
+  iperf3-08:
+    image: mlabbe/iperf3
+    build: .
+    ports:
+        - "5208:5201"
+  
+  iperf3-09:
+    image: mlabbe/iperf3
+    build: .
+    ports:
+        - "5209:5201"
+  
+  iperf3-10:
+    image: mlabbe/iperf3
+    build: .
+    ports:
+        - "5210:5201"
