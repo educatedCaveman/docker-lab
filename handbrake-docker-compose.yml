@@ -12,3 +12,4 @@ services:
       - /mnt/mobius/staging/handbrake/storage:/storage:ro
       - /mnt/mobius/staging/handbrake/watch:/watch:rw
       - /mnt/mobius/staging/handbrake/output:/output:rw
+    restart: unless-stopped
