@@ -63,7 +63,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=America/New_York
       - PASSWORD=password #optional
       - SUDO_PASSWORD=password #optional
       #- PROXY_DOMAIN=code-server.my.domain #optional
@@ -71,4 +71,22 @@ services:
         - /mnt/mobius/Backup/docker/dev/code-server/config:/config
     ports:
       - 9443:8443
+    restart: unless-stopped
+
+  ubooquity:
+    image: linuxserver/ubooquity
+    container_name: ubooquity
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+      - MAXMEM=maxmem
+    volumes:
+      - /mnt/mobius/Backup/docker/dev/ubooquity/config:/config
+      - /mnt/mobius/Backup/docker/dev/ubooquity/books:/books
+      - /mnt/mobius/Backup/docker/dev/ubooquity/comics:/comics
+      - /mnt/mobius/Backup/docker/dev/ubooquity/files:/files
+    ports:
+      - 2202:2202
+      - 2203:2203
     restart: unless-stopped
