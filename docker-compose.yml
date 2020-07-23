@@ -80,7 +80,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/New_York
-      - MAXMEM=maxmem
+      - MAXMEM=2G
     volumes:
       - /mnt/mobius/Backup/docker/dev/ubooquity/config:/config
       - /mnt/mobius/Backup/docker/dev/ubooquity/books:/books
