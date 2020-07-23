@@ -78,7 +78,7 @@ services:
     image: node:12.16.3-alpine
     command: /bin/sh -c "cd /home/shlink/www && npm install && npm run start"
     volumes:
-      - ./:/home/shlink/www
+      - /mnt/mobius/Backup/docker/dev/shlink/www:/home/shlink/www
     ports:
       - 3000:3000
       - 56745:56745
