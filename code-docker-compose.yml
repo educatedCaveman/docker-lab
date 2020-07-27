@@ -13,7 +13,7 @@ services:
       - SUDO_PASSWORD=password #optional
       #- PROXY_DOMAIN=code-server.my.domain #optional
     volumes:
-        - /mnt/mobius/Backup/docker/dev/code-server/config:/config
+        - /mnt/mobius/docker/code-server/config:/config
     ports:
       - 9443:8443
     restart: unless-stopped

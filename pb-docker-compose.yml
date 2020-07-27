@@ -7,7 +7,7 @@ services:
     ports:
       - '10002:10002'
     volumes:
-      - /mnt/mobius/Backup/docker/dev/pb:/pb
+      - /mnt/mobius/docker/pb:/pb
     environment:
       - 'LISTEN_ADDRESS=::'
       - 'LISTEN_PORT=10002'
