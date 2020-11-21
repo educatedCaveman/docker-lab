@@ -1,15 +1,15 @@
 ---
-version: '2.4'
+version: "2.4"
 services:
   pb:
     ports:
-      - '10002:10002'
+      - "10002:10002"
     volumes:
       - /mnt/mobius/docker/pb:/pb
     environment:
-      - 'LISTEN_ADDRESS=::'
-      - 'LISTEN_PORT=10002'
-      - 'CDN_PREFIX=//d34zelngniy2d8.cloudfront.net'
+      - "LISTEN_ADDRESS=::"
+      - "LISTEN_PORT=10002"
+      - "CDN_PREFIX=//d34zelngniy2d8.cloudfront.net"
 
   mongodb:
     image: mongo:latest

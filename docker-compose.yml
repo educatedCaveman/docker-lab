@@ -1,12 +1,11 @@
 ---
-version: '2.4'
+version: "2.4"
 services:
-  
   iperf3:
     image: mlabbe/iperf3
     build: .
     ports:
-        - "5201:5201"
+      - "5201:5201"
 
   handbrake:
     image: jlesage/handbrake
@@ -29,13 +28,13 @@ services:
       - "8088:80/tcp"
       - "8443:443/tcp"
     environment:
-      TZ: 'America/New-York'
+      TZ: "America/New-York"
       # WEBPASSWORD: 'set a secure password here or it will be random'
     # Volumes store your data between container upgrades
     volumes:
-        #TODO: make these be my files in git
-       - './etc-pihole/:/etc/pihole/'
-       - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
+      #TODO: make these be my files in git
+      - "./etc-pihole/:/etc/pihole/"
+      - "./etc-dnsmasq.d/:/etc/dnsmasq.d/"
     dns:
       - 192.168.13.1
     # Recommended but not required (DHCP needs NET_ADMIN)
@@ -45,17 +44,17 @@ services:
     restart: unless-stopped
 
   ytdl_material:
-    environment: 
-        ALLOW_CONFIG_MUTATIONS: 'true'
+    environment:
+      ALLOW_CONFIG_MUTATIONS: "true"
     restart: always
     volumes:
-        - /mnt/mobius/Backup/docker/dev/youtube-dl/appdata:/app/appdata
-        - /mnt/mobius/staging/youtube-dl/audio:/app/audio
-        - /mnt/mobius/staging/youtube-dl/video:/app/video
-        - /mnt/mobius/Backup/docker/dev/youtube-dl/subscriptions:/app/subscriptions
+      - /mnt/mobius/Backup/docker/dev/youtube-dl/appdata:/app/appdata
+      - /mnt/mobius/staging/youtube-dl/audio:/app/audio
+      - /mnt/mobius/staging/youtube-dl/video:/app/video
+      - /mnt/mobius/Backup/docker/dev/youtube-dl/subscriptions:/app/subscriptions
     ports:
-        - "8998:17442"
-    image: tzahi12345/youtubedl-material:latest          
+      - "8998:17442"
+    image: tzahi12345/youtubedl-material:latest
 
   code-server:
     image: linuxserver/code-server
@@ -68,7 +67,7 @@ services:
       - SUDO_PASSWORD=password #optional
       #- PROXY_DOMAIN=code-server.my.domain #optional
     volumes:
-        - /mnt/mobius/Backup/docker/dev/code-server/config:/config
+      - /mnt/mobius/Backup/docker/dev/code-server/config:/config
     ports:
       - 9443:8443
     restart: unless-stopped

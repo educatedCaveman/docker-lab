@@ -8,4 +8,3 @@ mkdir -p /mnt/storage_node/Docker/dev/youtube-dl/appdata
 mkdir -p /mnt/storage_node/Docker/dev/youtube-dl/subscriptions
 mkdir -p /mnt/storage_node/staging/docker/dev/youtube-dl/audio
 mkdir -p /mnt/storage_node/staging/docker/dev/youtube-dl/video
-
