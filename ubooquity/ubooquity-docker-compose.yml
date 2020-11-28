@@ -1,0 +1,20 @@
+---
+version: "2.4"
+services:
+  ubooquity:
+    image: linuxserver/ubooquity
+    container_name: ubooquity
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+      - MAXMEM=2048
+    volumes:
+      - /mnt/mobius/docker/ubooquity/config:/config
+      - /mnt/mobius/docker/ubooquity/books:/books
+      - /mnt/mobius/docker/ubooquity/comics:/comics
+      - /mnt/mobius/docker/ubooquity/files:/files
+    ports:
+      - 2202:2202
+      - 2203:2203
+    restart: unless-stopped
