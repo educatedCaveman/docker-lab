@@ -11,6 +11,6 @@ services:
     volumes:
       - /mnt/mobius/docker/heimdall/config:/config
     ports:
-      - 80:80
-      - 443:443
+      - 10080:80
+      - 10443:443
     restart: unless-stopped
