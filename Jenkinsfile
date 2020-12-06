@@ -9,21 +9,19 @@ pipeline {
         // notify
         stage('notify_start') {
             steps {
-                // sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} start'
-                sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} fuck'
+                sh 'python3 /var/lib/jenkins/linked_scripts/Jenkins/slack.py ${SLACK_WEBHOOK_URL} start'
             }
         }
 
         // deploy code to VM
         stage('deploy') {
             steps {
-                echo 'this is a new test' 
                 // // use this to pass the branch/env to any helper scripts
                 echo 'testing the branch name'
                 echo env.BRANCH_NAME
-                // sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} start'
             }
         }
+
         // restart docker container
         stage('restart') {
             steps {
@@ -32,15 +30,15 @@ pipeline {
                 echo 'this is where we restart the docker containers.  possibly a script?'
             }
         }
-
     }
+    
     // notify on complete
     post {
         success {
-            sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} end'
+            sh 'python3 /var/lib/jenkins/linked_scripts/Jenkins/slack.py ${SLACK_WEBHOOK_URL} end'
         }
         failure {
-            sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} error'
+            sh 'python3 /var/lib/jenkins/linked_scripts/Jenkins/slack.py ${SLACK_WEBHOOK_URL} error'
         }
     }
 }
