@@ -9,21 +9,10 @@ SLACK_CHANNEL = "#dev_sec_ops"
 ALERT_STATE = sys.argv[2]
 
 alert_map = {
-    # "emoji": {
-    #     "up": ":white_check_mark:",
-    #     "down": ":fire:"
-    # },
-    "text": {
-        "up": "RESOLVED",
-        "down": "FIRING"
-    },
-    # "message": {
-    #     "up": "Everything is good!",
-    #     "down": "Stuff is burning!"
-    # },
     "color": {
-        "up": "#32a852",
-        "down": "#ad1721"
+        "start": "#32a852",
+        "end": "#32a852",
+        "error": "#ad1721"
     }
 }
 
