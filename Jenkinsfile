@@ -5,8 +5,10 @@ pipeline {
         stage('deploy') {
             steps {
                 echo 'this is a new test' 
+                // use this to pass the branch/env to any helper scripts
                 echo 'testing the branch name'
                 echo env.BRANCH_NAME
+                sh 'python --version'
             }
         }
         // restart docker container
