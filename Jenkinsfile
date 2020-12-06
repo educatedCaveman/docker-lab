@@ -1,5 +1,10 @@
 pipeline {
     agent any 
+
+    environment {
+        SLACK_WEBHOOK_URL = credentials('lack_webhook_url_dev_sec_ops')
+    }
+
     stages {
         // deploy code to VM
         stage('deploy') {
@@ -9,11 +14,14 @@ pipeline {
                 echo 'testing the branch name'
                 echo env.BRANCH_NAME
                 sh 'python3 --version'
+                echo "WebHook URL: ${SLACK_WEBHOOK_URL}"
             }
         }
         // restart docker container
         stage('restart') {
             steps {
+                // need to determine which containers to restart.
+                // this depends on the changes in the repo
                 echo 'this is where we restart the docker containers.  possibly a script?'
             }
         }
