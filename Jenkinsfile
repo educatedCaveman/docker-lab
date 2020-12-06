@@ -13,7 +13,7 @@ pipeline {
                 // // use this to pass the branch/env to any helper scripts
                 // echo 'testing the branch name'
                 // echo env.BRANCH_NAME
-                sh 'python3 /home/drake/slack.py ${SLACK_WEBHOOK_URL} start'
+                sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} start'
             }
         }
         // restart docker container
