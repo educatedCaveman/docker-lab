@@ -31,14 +31,15 @@ pipeline {
                 echo 'this is where we restart the docker containers.  possibly a script?'
             }
         }
-        // notify on complete
-        post {
-            success {
-                sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} end'
-            }
-            failure {
-                sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} error'
-            }
+
+    }
+    // notify on complete
+    post {
+        success {
+            sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} end'
+        }
+        failure {
+            sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} error'
         }
     }
 }
