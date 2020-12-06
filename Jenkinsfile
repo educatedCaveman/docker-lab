@@ -9,7 +9,8 @@ pipeline {
         // notify
         stage('notify_start') {
             steps {
-                sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} start'
+                // sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} start'
+                sh 'python3 /var/lib/jenkins/slack.py ${SLACK_WEBHOOK_URL} fuck'
             }
         }
 
