@@ -16,7 +16,7 @@ pipeline {
         // deploy code to VM
         stage('deploy') {
             steps {
-                // echo 'this is a new test' 
+                echo 'this is a new test' 
                 // // use this to pass the branch/env to any helper scripts
                 echo 'testing the branch name'
                 echo env.BRANCH_NAME
