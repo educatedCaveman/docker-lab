@@ -15,8 +15,9 @@ pipeline {
                 echo env.BRANCH_NAME
                 // sh 'python3 --version'
                 // echo "WebHook URL: ${SLACK_WEBHOOK_URL}"
-                sh 'python3 /home/drake/slack.py ${SLACK_WEBHOOK_URL}, start'
+                // sh 'python3 /home/drake/slack.py ${SLACK_WEBHOOK_URL}, start'
                 // sh 'whoami'
+                sh 'echo $HOME'
             }
         }
         // restart docker container
