@@ -2,7 +2,7 @@ pipeline {
     agent any 
 
     environment {
-        SLACK_WEBHOOK_URL = credentials('lack_webhook_url_dev_sec_ops')
+        SLACK_WEBHOOK_URL = credentials('slack_webhook_url_dev_sec_ops')
     }
 
     stages {
