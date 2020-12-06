@@ -4,12 +4,9 @@ import os
 
 # replicated from https://blog.ruanbekker.com/blog/2020/11/06/sending-slack-messages-with-python/
 
-# webhook:
-# https://hooks.slack.com/services/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
-
-SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/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'
+SLACK_WEBHOOK_URL = sys.argv[1]
 SLACK_CHANNEL = "#dev_sec_ops"
-ALERT_STATE = sys.argv[1]
+ALERT_STATE = sys.argv[2]
 
 alert_map = {
     # "emoji": {
