@@ -20,8 +20,8 @@ pipeline {
             when { branch 'test_dev' }
             steps {
                 // // use this to pass the branch/env to any helper scripts
-                echo 'testing the branch name'
-                echo env.BRANCH_NAME
+                echo 'test running ansible'
+                sh 'anssible -m ping self'
             }
         }
 
