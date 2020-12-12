@@ -12,13 +12,15 @@ pipeline {
         stage('notify_start') {
             steps {
                 sh 'python3 ${JENKINS_SCRIPTS}/slack.py ${SLACK_WEBHOOK_URL} start'
+                echo env.BRANCH_NAME
+                echo expression { env.BRANCH_NAME == 'dev_test'}
             }
         }
 
         // deploy code to VM
         stage('deploy dev') {
             when { 
-                expression { env.BRANCH_NAME == 'test_dev' } 
+                expression { env.BRANCH_NAME == 'dev_test' } 
             }
             steps {
                 // // use this to pass the branch/env to any helper scripts
