@@ -13,7 +13,6 @@ pipeline {
             steps {
                 sh 'python3 ${JENKINS_SCRIPTS}/slack.py ${SLACK_WEBHOOK_URL} start'
                 echo env.BRANCH_NAME
-                echo expression { env.BRANCH_NAME == 'dev_test'}
             }
         }
 
