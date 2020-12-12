@@ -21,7 +21,7 @@ pipeline {
             steps {
                 // // use this to pass the branch/env to any helper scripts
                 echo 'test running ansible'
-                sh 'anssible -m ping self'
+                sh 'ansible -m ping self'
             }
         }
 
