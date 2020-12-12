@@ -3,18 +3,31 @@ pipeline {
 
     environment {
         SLACK_WEBHOOK_URL = credentials('slack_webhook_url_dev_sec_ops')
+        JENKINS_SCRIPTS = '/var/lib/jenkins/workspace/Jenkins_self_deploy_main'
+        ANSIBLE_REPO = '/var/lib/jenkins/workspace/Ansible_pipeline_master'
     }
 
     stages {
         // notify
         stage('notify_start') {
             steps {
-                sh 'python3 /var/lib/jenkins/linked_scripts/Jenkins/slack.py ${SLACK_WEBHOOK_URL} start'
+                sh 'python3 ${JENKINS_SCRIPTS}/slack.py ${SLACK_WEBHOOK_URL} start'
             }
         }
 
         // deploy code to VM
-        stage('deploy') {
+        stage('deploy dev') {
+            when { branch 'test_dev' }
+            steps {
+                // // use this to pass the branch/env to any helper scripts
+                echo 'testing the branch name'
+                echo env.BRANCH_NAME
+            }
+        }
+
+        // deploy code to VM
+        stage('deploy prd') {
+            when { branch 'master' }
             steps {
                 // // use this to pass the branch/env to any helper scripts
                 echo 'testing the branch name'
@@ -31,14 +44,14 @@ pipeline {
             }
         }
     }
-    
+
     // notify on complete
     post {
         success {
-            sh 'python3 /var/lib/jenkins/linked_scripts/Jenkins/slack.py ${SLACK_WEBHOOK_URL} end'
+            sh 'python3 ${JENKINS_SCRIPTS}/slack.py ${SLACK_WEBHOOK_URL} end'
         }
         failure {
-            sh 'python3 /var/lib/jenkins/linked_scripts/Jenkins/slack.py ${SLACK_WEBHOOK_URL} error'
+            sh 'python3 ${JENKINS_SCRIPTS}/slack.py ${SLACK_WEBHOOK_URL} error'
         }
     }
 }
