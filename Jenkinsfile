@@ -24,8 +24,8 @@ pipeline {
             steps {
                 // // use this to pass the branch/env to any helper scripts
                 echo 'test running ansible'
-                // sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_docker_dev.yaml -vvv'
-                sh 'ansible -m ping labnodes'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_docker_dev.yaml'
+                // sh 'ansible -m ping labnodes'
             }
         }
 
