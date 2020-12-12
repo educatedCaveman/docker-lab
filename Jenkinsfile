@@ -17,7 +17,7 @@ pipeline {
 
         // deploy code to VM
         stage('deploy dev') {
-            when { branch 'test_dev' }
+            when { env.BRANCH_NAME == 'test_dev' }
             steps {
                 // // use this to pass the branch/env to any helper scripts
                 echo 'test running ansible'
