@@ -16,26 +16,25 @@ pipeline {
             }
         }
 
-        // deploy code to VM
+        // deploy code to lv-426.lab, when the branch is 'dev_test'
         stage('deploy dev') {
             when { 
                 expression { env.BRANCH_NAME == 'dev_test' } 
             }
             steps {
-                // // use this to pass the branch/env to any helper scripts
-                echo 'test running ansible'
+                // deploy configs to DEV
+                echo 'deploy docker config files (DEV)'
                 sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_docker_dev.yaml'
-                // sh 'ansible -m ping labnodes'
             }
         }
 
-        // deploy code to VM
+        // deploy code to sevastopol.vm, when the branch is 'master'
         stage('deploy prd') {
             when { branch 'master' }
             steps {
-                // // use this to pass the branch/env to any helper scripts
-                echo 'testing the branch name'
-                echo env.BRANCH_NAME
+                // deploy configs to PRD
+                echo 'deploy docker config files (PRD)'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_docker_prd.yaml'
             }
         }
 
