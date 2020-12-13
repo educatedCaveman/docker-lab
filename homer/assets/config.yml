@@ -201,7 +201,7 @@ services:
         url:  "https://git.drak3.io/"
 
   - name: "Pi-Hole"
-    logo: "icons/pi_hole_icon_BW.svg"
+    logo: "assets/pi_hole_icon_BW.svg"
     items:
 
       - name: "Singularity"
@@ -229,11 +229,11 @@ services:
   # - code
   # - whoogle
   - name: "Applications"
-    logo: "fab fa-user"
+    logo: "fas fa-user"
     items:
 
       - name: "NextCloud"
-        logo: "fab fa-cloud"
+        logo: "fas fa-cloud"
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
@@ -245,19 +245,19 @@ services:
         url:  "https://cloud.drak3.io"
 
       - name: "YouTube DL"
-        logo: "fab fa-youtube "
+        logo: "fas fa-youtube "
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
 
       - name: "VS Code"
-        logo: "fab fa-code "
+        logo: "fas fa-code "
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
 
       - name: "Whoogle"
-        logo: "fab fa-google "
+        logo: "fas fa-google "
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
@@ -265,35 +265,35 @@ services:
   #TODO: git
   # - all repos as separate links
   - name: "GitHub"
-    logo: "fab fa-github"
+    logo: "fas fa-github"
     items:
     
       - name: "Scripts"
-        logo: "fab fa-github"
+        logo: "fas fa-github"
         subtitle: "Scripts Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/scripts"
     
       - name: "Dotfiles"
-        logo: "fab fa-github"
+        logo: "fas fa-github"
         subtitle: "Dotfiles Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/dotfiles"
     
       - name: "Ansible"
-        logo: "fab fa-github"
+        logo: "fas fa-github"
         subtitle: "Ansible Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/ansible"
     
       - name: "Docker"
-        logo: "fab fa-github"
+        logo: "fas fa-github"
         subtitle: "Docker Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/docker-lab"
     
       - name: "Jenkins"
-        logo: "fab fa-github"
+        logo: "fas fa-github"
         subtitle: "Jenkins Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/Jenkins"
