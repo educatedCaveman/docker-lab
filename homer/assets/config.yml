@@ -251,13 +251,13 @@ services:
         url:  "https://cloud.drak3.io"
 
       - name: "VS Code"
-        logo: "fas fa-code "
+        logo: "fas fa-code"
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
 
       - name: "Whoogle"
-        logo: "fas fa-google "
+        logo: "fas fa-google"
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
@@ -265,35 +265,35 @@ services:
   #TODO: git
   # - all repos as separate links
   - name: "GitHub"
-    logo: "fas fa-github"
+    icon: "fab fa-github"
     items:
     
       - name: "Scripts"
-        logo: "fas fa-github"
+        icon: "fab fa-github"
         subtitle: "Scripts Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/scripts"
     
       - name: "Dotfiles"
-        logo: "fas fa-github"
+        icon: "fab fa-github"
         subtitle: "Dotfiles Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/dotfiles"
     
       - name: "Ansible"
-        logo: "fas fa-github"
+        icon: "fab fa-github"
         subtitle: "Ansible Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/ansible"
     
       - name: "Docker"
-        logo: "fas fa-github"
+        icon: "fab fa-github"
         subtitle: "Docker Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/docker-lab"
     
       - name: "Jenkins"
-        logo: "fas fa-github"
+        icon: "fab fa-github"
         subtitle: "Jenkins Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/Jenkins"
