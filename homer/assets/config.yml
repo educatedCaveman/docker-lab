@@ -70,7 +70,7 @@ links:
   #   icon: "fas fa-book"
   #   url: "https://github.com/bastienwirtz/homer"
   - name: "Font Awesome Icons"
-    icon: "fas fa-font-awesome"
+    icon: "fab fa-font-awesome"
     url:  "https://fontawesome.com/v4.7.0/icons/"
 
 # Services
@@ -165,13 +165,13 @@ services:
     items:
 
       - name: "Jenkins"
-        logo: "icons/jenkins.svg"
+        logo: "jenkins.svg"
         subtitle: "jenkins.vm"
         tag:  "Services"
         url:  "https://jenkins.drak3.io/"
 
       - name: "Portainer (PRD)"
-        iclogoon: "icons/docker.png"
+        iclogoon: "docker.png"
         subtitle: "portainer.drak3.io"
         tag:  "Services"
         url:  "https://portainer.drak3.io/"
@@ -221,3 +221,13 @@ services:
         subtitle: "tbd.drak3.io"
         tag:  "pihole"
         url:  "https://duckduckgo.com"
+
+  #TODO: applications
+  # - nextcloud
+  # - plex
+  # - ytdl
+  # - code
+  # - whoogle
+
+  #TODO: git
+  # - all repos as separate links
