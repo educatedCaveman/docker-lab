@@ -228,6 +228,45 @@ services:
   # - ytdl
   # - code
   # - whoogle
+  # - name: "Applications"
+  #   logo: "fab fa-user"
+  #   items:
+
+  #     - name: "NextCloud"
+  #       logo: ""
 
   #TODO: git
   # - all repos as separate links
+  - name: "GitHub"
+    logo: "fab fa-github"
+    items:
+    
+      - name: "Scripts"
+        logo: "fab fa-github"
+        subtitle: "Scripts Git Repo"
+        tag:  "GitHub"
+        url:  "https://github.com/educatedCaveman/scripts"
+    
+      - name: "Dotfiles"
+        logo: "fab fa-github"
+        subtitle: "Dotfiles Git Repo"
+        tag:  "GitHub"
+        url:  "https://github.com/educatedCaveman/dotfiles"
+    
+      - name: "Ansible"
+        logo: "fab fa-github"
+        subtitle: "Ansible Git Repo"
+        tag:  "GitHub"
+        url:  "https://github.com/educatedCaveman/ansible"
+    
+      - name: "Docker"
+        logo: "fab fa-github"
+        subtitle: "Docker Git Repo"
+        tag:  "GitHub"
+        url:  "https://github.com/educatedCaveman/docker-lab"
+    
+      - name: "Jenkins"
+        logo: "fab fa-github"
+        subtitle: "Jenkins Git Repo"
+        tag:  "GitHub"
+        url:  "https://github.com/educatedCaveman/Jenkins"
