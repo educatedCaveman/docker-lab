@@ -1,61 +1,61 @@
 ---
 version: "2.4"
 services:
-  iperf3-01:
+  iperf3_01:
     image: mlabbe/iperf3
     ports:
       - 5201:5201
     restart: unless-stopped
 
-  iperf3-02:
+  iperf3_02:
     image: mlabbe/iperf3
     ports:
       - 5202:5201
     restart: unless-stopped
 
-  iperf3-03:
+  iperf3_03:
     image: mlabbe/iperf3
     ports:
       - 5203:5201
     restart: unless-stopped
 
-  iperf3-04:
+  iperf3_04:
     image: mlabbe/iperf3
     ports:
       - 5204:5201
     restart: unless-stopped
 
-  iperf3-05:
+  iperf3_05:
     image: mlabbe/iperf3
     ports:
       - 5205:5201
     restart: unless-stopped
 
-  iperf3-06:
+  iperf3_06:
     image: mlabbe/iperf3
     ports:
       - 5206:5201
     restart: unless-stopped
 
-  iperf3-07:
+  iperf3_07:
     image: mlabbe/iperf3
     ports:
       - 5207:5201
     restart: unless-stopped
 
-  iperf3-08:
+  iperf3_08:
     image: mlabbe/iperf3
     ports:
       - 5208:5201
     restart: unless-stopped
 
-  iperf3-09:
+  iperf3_09:
     image: mlabbe/iperf3
     ports:
       - 5209:5201
     restart: unless-stopped
 
-  iperf3-10:
+  iperf3_10:
     image: mlabbe/iperf3
     ports:
       - 5210:5201
