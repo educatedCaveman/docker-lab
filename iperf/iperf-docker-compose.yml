@@ -1,6 +1,7 @@
 ---
 version: "2.4"
 services:
+  #10 copies of iperf, on different ports
   iperf3_01:
     image: mlabbe/iperf3
     ports:
