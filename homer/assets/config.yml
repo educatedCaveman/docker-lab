@@ -109,8 +109,8 @@ services:
     icon: "fas fa-globe"
     items:
       - name: "Github"
-        logo: "fab fa-github"
+        logo: "fas fa-github"
         subtitle: "Github Repos"
         tag:  "external"
         url:  "https://github.com/educatedCaveman"
-        
+
