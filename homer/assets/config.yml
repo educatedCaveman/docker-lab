@@ -1,17 +1,10 @@
 ## Configuration
 
 ---
-# Homepage configuration
-# See https://fontawesome.com/icons for icons options
-
-# Optional: Use external configuration file. 
-# Using this will ignore remaining config in this file
-# externalConfig: https://example.com/server-luci/config.yaml
-
 title: "Grand Ol' Dungeon of the Horned God"
 subtitle: "Homer"
 # documentTitle: "Welcome" # Customize the browser tab text
-logo: "assets/icons/icon-any.svg"
+logo: "assets/icons/icon-maskable.png"
 # Alternatively a fa icon can be provided:
 # icon: "fas fa-skull-crossbones"
 
@@ -29,9 +22,7 @@ theme: default # 'default' or one of the themes available in 'src/assets/themes'
 # stylesheet:
 #   - "assets/custom.css"
 
-# Here is the exhaustive list of customization parameters
-# However all value are optional and will fallback to default if not set.
-# if you want to change only some of the colors, feel free to remove all unused key.
+#default colors from github:
 colors:
   light:
     highlight-primary: "#3367d6"
@@ -60,24 +51,24 @@ colors:
     link-hover: "#ffdd57"
     background-image: "assets/your/dark/bg.png"
 
-# Optional message
-message:
-  # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
-  style: "is-warning"
-  title: "Optional message!"
-  icon: "fa fa-exclamation-triangle"
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+# # Optional message
+# message:
+#   # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
+#   style: "is-warning"
+#   title: "Optional message!"
+#   icon: "fa fa-exclamation-triangle"
+#   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
   - name: "Link 1"
     icon: "fab fa-github"
-    url: "https://github.com/bastienwirtz/homer"
+    url: "https://github.com/educatedCaveman"
     target: "_blank" # optional html tag target attribute
-  - name: "link 2"
-    icon: "fas fa-book"
-    url: "https://github.com/bastienwirtz/homer"
+  # - name: "link 2"
+  #   icon: "fas fa-book"
+  #   url: "https://github.com/bastienwirtz/homer"
 
 # Services
 # First level array represents a group.
@@ -113,3 +104,13 @@ services:
         target: "_blank" # optional html a tag target attribute
         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
         # background: red # optional color for card to set color directly without custom stylesheet
+
+  - name: "External Apps"
+    icon: "fas fa-globe"
+    items:
+      - name: "Github"
+        logo: "fab fa-github"
+        subtitle: "Github Repos"
+        tag:  "external"
+        url:  "https://github.com/educatedCaveman"
+        
