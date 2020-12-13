@@ -69,41 +69,44 @@ links:
   # - name: "link 2"
   #   icon: "fas fa-book"
   #   url: "https://github.com/bastienwirtz/homer"
+  - name: "Font Awesome Icons"
+    icon: "fas fa-font-awesome"
+    url:  "https://fontawesome.com/v4.7.0/icons/"
 
 # Services
 # First level array represents a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
-services:
-  - name: "Application"
-    icon: "fas fa-code-branch"
-    items:
-      - name: "Awesome app"
-        logo: "assets/tools/sample.png"
-        # Alternatively a fa icon can be provided:
-        # icon: "fab fa-jenkins"
-        subtitle: "Bookmark example"
-        tag: "app"
-        url: "https://www.reddit.com/r/selfhosted/"
-        target: "_blank" # optional html tag target attribute
-      - name: "Another one"
-        logo: "assets/tools/sample2.png"
-        subtitle: "Another application"
-        tag: "app"
-        # Optional tagstyle
-        tagstyle: "is-success"
-        url: "#"
-  - name: "Other group"
-    icon: "fas fa-heartbeat"
-    items:
-      - name: "Pi-hole"
-        logo: "assets/tools/sample.png"
-        # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
-        tag: "other"
-        url: "http://192.168.0.151/admin"
-        type: "PiHole" # optional, loads a specific component that provides extra features. MUST MATCH a file name (without file extension) available in `src/components/services`
-        target: "_blank" # optional html a tag target attribute
-        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
-        # background: red # optional color for card to set color directly without custom stylesheet
+# services:
+#   - name: "Application"
+#     icon: "fas fa-code-branch"
+#     items:
+#       - name: "Awesome app"
+#         logo: "assets/tools/sample.png"
+#         # Alternatively a fa icon can be provided:
+#         # icon: "fab fa-jenkins"
+#         subtitle: "Bookmark example"
+#         tag: "app"
+#         url: "https://www.reddit.com/r/selfhosted/"
+#         target: "_blank" # optional html tag target attribute
+#       - name: "Another one"
+#         logo: "assets/tools/sample2.png"
+#         subtitle: "Another application"
+#         tag: "app"
+#         # Optional tagstyle
+#         tagstyle: "is-success"
+#         url: "#"
+#   - name: "Other group"
+#     icon: "fas fa-heartbeat"
+#     items:
+#       - name: "Pi-hole"
+#         logo: "assets/tools/sample.png"
+#         # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
+#         tag: "other"
+#         url: "http://192.168.0.151/admin"
+#         type: "PiHole" # optional, loads a specific component that provides extra features. MUST MATCH a file name (without file extension) available in `src/components/services`
+#         target: "_blank" # optional html a tag target attribute
+#         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+#         # background: red # optional color for card to set color directly without custom stylesheet
 
   - name: "External Apps"
     icon: "fas fa-globe"
@@ -114,3 +117,16 @@ services:
         tag:  "external"
         url:  "https://github.com/educatedCaveman"
 
+  - name: "Servers"
+    icon: "fas fa-server"
+    items:
+      - name: "Mobius"
+        icon: "fab fa-server"
+        subtitle: "TrueNAS Server"
+        tag:  "Server"
+        url:  "https://mobius.drak3.io"
+      - name: "Tesseract"
+        icon: "fas fa-server"
+        subtitle: "TrueNAS Server"
+        tag:  "Server"
+        url:  "https://tesseract.drak3.io"
