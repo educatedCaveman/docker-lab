@@ -45,6 +45,18 @@ pipeline {
                 sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_docker_prd.yaml'
             }
         }
+
+        // deploy to lv-426.lab whent the branch is dev_test
+        stage('deploy prd stacks') {
+            when { 
+                expression { env.BRANCH_NAME == 'master' } 
+            }
+            steps {
+                // deploy configs to DEV
+                echo 'deploy docker compose to portainer'
+                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control.py --env=PRD --repo=${LOCAL_REPO_PRD}'
+            }
+        }
     }
 }
 
