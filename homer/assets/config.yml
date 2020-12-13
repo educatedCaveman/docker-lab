@@ -122,12 +122,102 @@ services:
     icon: "fas fa-server"
     items:
       - name: "Mobius"
-        icon: "fab fa-server"
+        icon: "fas fa-server"
         subtitle: "TrueNAS Server"
         tag:  "Server"
         url:  "https://mobius.drak3.io"
+
       - name: "Tesseract"
         icon: "fas fa-server"
         subtitle: "TrueNAS Server"
         tag:  "Server"
         url:  "https://tesseract.drak3.io"
+
+      - name: "Unifi Controller"
+        icon: "fas fa-server"
+        subtitle: "Unifi Controller"
+        tag:  "Server"
+        url:  "https://unifi.drak3.io"
+
+  - name: "iDRAC / IPMI"
+    icon: "fas fa-server"
+    items:
+      - name: "Mobius (iDRAC)"
+        icon: "fas fa-server"
+        subtitle: "Mobius (iDRAC)"
+        tag:  "admin"
+        url:  "https://idrac.mobius.drak3.io"
+
+      - name: "Tesseract (iDRAC)"
+        icon: "fas fa-server"
+        subtitle: "Tesseract (iDRAC)"
+        tag:  "admin"
+        url:  "https://idrac.tesseract.drak3.io"
+
+      - name: "pfSense (IPMI)"
+        icon: "fas fa-server"
+        subtitle: "pfSense (IPMI)"
+        tag:  "admin"
+        url:  "http://192.168.1.10"
+
+  - name: "Services"
+    icon: "fas fa-server"
+    items:
+
+      - name: "Jenkins"
+        icon: "icons/jenkins.svg"
+        subtitle: "jenkins.vm"
+        tag:  "Services"
+        url:  "https://jenkins.drak3.io/"
+
+      - name: "Portainer (PRD)"
+        icon: "icons/docker.png"
+        subtitle: "portainer.drak3.io"
+        tag:  "Services"
+        url:  "https://portainer.drak3.io/"
+
+      - name: "Portainer (DEV)"
+        icon: "icons/docker.png"
+        subtitle: "portainer.dev.drak3.io"
+        tag:  "Services"
+        url:  "https://portainer.dev.drak3.io/"
+
+      - name: "qBittorrent"
+        icon: "icons/qbittorrent.png"
+        subtitle: "qbittorrent.vm"
+        tag:  "Services"
+        url:  "https://qbt.drak3.io/"
+
+      - name: "Syncthing"
+        icon: "icons/syncthing.png"
+        subtitle: "syncthing.vm"
+        tag:  "Services"
+        url:  "https://sync.drak3.io/syncthing/"
+
+      - name: "Gitea"
+        icon: "icons/Gitea_Logo.svg"
+        subtitle: "Gitea"
+        tag:  "Services"
+        url:  "https://git.drak3.io/"
+
+  - name: "Pi-Hole"
+    logo: "icons/pi_hole_icon_BW.svg"
+    items:
+
+      - name: "Singularity"
+        logo: "icons/Pi-hole_vector_logo_svg.png"
+        subtitle: "singularity.vm"
+        tag:  "pihole"
+        url:  "https://pihole.drak3.io/admin/index.php"
+
+      - name: "Event Horizon"
+        logo: "icons/Pi-hole_vector_logo_svg.png"
+        subtitle: "event-horizon.srv"
+        tag:  "pihole"
+        url:  "https://pihole2.drak3.io/admin/index.php"
+
+      - name: "Pi-Hole (docker)"
+        logo: "icons/Pi-hole_vector_logo_svg.png"
+        subtitle: "tbd.drak3.io"
+        tag:  "pihole"
+        url:  "https://duckduckgo.com"
