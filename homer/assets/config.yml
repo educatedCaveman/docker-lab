@@ -228,12 +228,39 @@ services:
   # - ytdl
   # - code
   # - whoogle
-  # - name: "Applications"
-  #   logo: "fab fa-user"
-  #   items:
+  - name: "Applications"
+    logo: "fab fa-user"
+    items:
 
-  #     - name: "NextCloud"
-  #       logo: ""
+      - name: "NextCloud"
+        logo: "fab fa-cloud"
+        subtitle: "nectcloud.vm"
+        tag:  "application"
+        url:  "https://cloud.drak3.io"
+
+      - name: "Plex"
+        logo: "assets/plex.svg"
+        subtitle: "nectcloud.vm"
+        tag:  "application"
+        url:  "https://cloud.drak3.io"
+
+      - name: "YouTube DL"
+        logo: "fab fa-youtube "
+        subtitle: "nectcloud.vm"
+        tag:  "application"
+        url:  "https://cloud.drak3.io"
+
+      - name: "VS Code"
+        logo: "fab fa-code "
+        subtitle: "nectcloud.vm"
+        tag:  "application"
+        url:  "https://cloud.drak3.io"
+
+      - name: "Whoogle"
+        logo: "fab fa-google "
+        subtitle: "nectcloud.vm"
+        tag:  "application"
+        url:  "https://cloud.drak3.io"
 
   #TODO: git
   # - all repos as separate links
