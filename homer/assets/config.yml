@@ -171,7 +171,7 @@ services:
         url:  "https://jenkins.drak3.io/"
 
       - name: "Portainer (PRD)"
-        iclogoon: "docker.png"
+        logo: "docker.png"
         subtitle: "portainer.drak3.io"
         tag:  "Services"
         url:  "https://portainer.drak3.io/"
