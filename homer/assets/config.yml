@@ -233,7 +233,7 @@ services:
     items:
 
       - name: "NextCloud"
-        icon: "fab fa-cloud"
+        logo: "assets/Nextcloud_Logo.svg"
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
