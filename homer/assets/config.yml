@@ -177,7 +177,7 @@ services:
         url:  "https://portainer.drak3.io/"
 
       - name: "Portainer (DEV)"
-        logo: "icons/docker.png"
+        logo: "assets/docker.png"
         subtitle: "portainer.dev.drak3.io"
         tag:  "Services"
         url:  "https://portainer.dev.drak3.io/"
