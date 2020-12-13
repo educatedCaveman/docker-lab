@@ -205,19 +205,19 @@ services:
     items:
 
       - name: "Singularity"
-        logo: "assets/Pi-hole_vector_logo_svg.png"
+        logo: "assets/Pi-hole_vector_logo.svg.png"
         subtitle: "singularity.vm"
         tag:  "pihole"
         url:  "https://pihole.drak3.io/admin/index.php"
 
       - name: "Event Horizon"
-        logo: "assets/Pi-hole_vector_logo_svg.png"
+        logo: "assets/Pi-hole_vector_logo.svg.png"
         subtitle: "event-horizon.srv"
         tag:  "pihole"
         url:  "https://pihole2.drak3.io/admin/index.php"
 
       - name: "Pi-Hole (docker)"
-        logo: "assets/Pi-hole_vector_logo_svg.png"
+        logo: "assets/Pi-hole_vector_logo.svg.png"
         subtitle: "tbd.drak3.io"
         tag:  "pihole"
         url:  "https://duckduckgo.com"
