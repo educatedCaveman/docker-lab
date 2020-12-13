@@ -229,7 +229,7 @@ services:
   # - code
   # - whoogle
   - name: "Applications"
-    icon: "fab fa-user"
+    icon: "fas fa-user"
     items:
 
       - name: "NextCloud"
@@ -251,7 +251,7 @@ services:
         url:  "https://cloud.drak3.io"
 
       - name: "VS Code"
-        icon: "fab fa-code"
+        icon: "fas fa-code"
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
