@@ -165,37 +165,37 @@ services:
     items:
 
       - name: "Jenkins"
-        icon: "icons/jenkins.svg"
+        logo: "icons/jenkins.svg"
         subtitle: "jenkins.vm"
         tag:  "Services"
         url:  "https://jenkins.drak3.io/"
 
       - name: "Portainer (PRD)"
-        icon: "icons/docker.png"
+        iclogoon: "icons/docker.png"
         subtitle: "portainer.drak3.io"
         tag:  "Services"
         url:  "https://portainer.drak3.io/"
 
       - name: "Portainer (DEV)"
-        icon: "icons/docker.png"
+        logo: "icons/docker.png"
         subtitle: "portainer.dev.drak3.io"
         tag:  "Services"
         url:  "https://portainer.dev.drak3.io/"
 
       - name: "qBittorrent"
-        icon: "icons/qbittorrent.png"
+        logo: "icons/qbittorrent.png"
         subtitle: "qbittorrent.vm"
         tag:  "Services"
         url:  "https://qbt.drak3.io/"
 
       - name: "Syncthing"
-        icon: "icons/syncthing.png"
+        logo: "icons/syncthing.png"
         subtitle: "syncthing.vm"
         tag:  "Services"
         url:  "https://sync.drak3.io/syncthing/"
 
       - name: "Gitea"
-        icon: "icons/Gitea_Logo.svg"
+        logo: "icons/Gitea_Logo.svg"
         subtitle: "Gitea"
         tag:  "Services"
         url:  "https://git.drak3.io/"
@@ -205,19 +205,19 @@ services:
     items:
 
       - name: "Singularity"
-        logo: "icons/Pi-hole_vector_logo_svg.png"
+        logo: "Pi-hole_vector_logo_svg.png"
         subtitle: "singularity.vm"
         tag:  "pihole"
         url:  "https://pihole.drak3.io/admin/index.php"
 
       - name: "Event Horizon"
-        logo: "icons/Pi-hole_vector_logo_svg.png"
+        logo: "../icons/Pi-hole_vector_logo_svg.png"
         subtitle: "event-horizon.srv"
         tag:  "pihole"
         url:  "https://pihole2.drak3.io/admin/index.php"
 
       - name: "Pi-Hole (docker)"
-        logo: "icons/Pi-hole_vector_logo_svg.png"
+        logo: "../www/assets/Pi-hole_vector_logo_svg.png"
         subtitle: "tbd.drak3.io"
         tag:  "pihole"
         url:  "https://duckduckgo.com"
