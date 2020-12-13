@@ -108,6 +108,7 @@ links:
 #         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
 #         # background: red # optional color for card to set color directly without custom stylesheet
 
+services:
   - name: "External Apps"
     icon: "fas fa-globe"
     items:
