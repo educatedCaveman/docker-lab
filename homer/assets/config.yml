@@ -62,7 +62,7 @@ colors:
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Link 1"
+  - name: "GitHub"
     icon: "fab fa-github"
     url: "https://github.com/educatedCaveman"
     target: "_blank" # optional html tag target attribute
@@ -222,12 +222,6 @@ services:
         tag:  "pihole"
         url:  "https://duckduckgo.com"
 
-  #TODO: applications
-  # - nextcloud
-  # - plex
-  # - ytdl
-  # - code
-  # - whoogle
   - name: "Applications"
     icon: "fas fa-user"
     items:
@@ -262,8 +256,6 @@ services:
         tag:  "application"
         url:  "https://cloud.drak3.io"
 
-  #TODO: git
-  # - all repos as separate links
   - name: "GitHub"
     icon: "fab fa-github"
     items:
