@@ -229,11 +229,11 @@ services:
   # - code
   # - whoogle
   - name: "Applications"
-    logo: "fab fa-user"
+    icon: "fab fa-user"
     items:
 
       - name: "NextCloud"
-        logo: "fab fa-cloud"
+        icon: "fab fa-cloud"
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
@@ -245,19 +245,19 @@ services:
         url:  "https://cloud.drak3.io"
 
       - name: "YouTube DL"
-        logo: "fab fa-youtube"
+        icon: "fab fa-youtube"
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
 
       - name: "VS Code"
-        logo: "fab fa-code"
+        icon: "fab fa-code"
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
 
       - name: "Whoogle"
-        logo: "fab fa-google"
+        icon: "fab fa-google"
         subtitle: "nectcloud.vm"
         tag:  "application"
         url:  "https://cloud.drak3.io"
