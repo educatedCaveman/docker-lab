@@ -174,9 +174,9 @@ services:
 
       - name: "Plex"
         logo: "assets/plex.svg"
-        subtitle: "nectcloud.vm"
+        subtitle: "https://plex.drak3.io"
         tag:  "application"
-        url:  "https://cloud.drak3.io"
+        url:  "https://plex.drak3.io"
 
       - name: "YouTube DL"
         icon: "fab fa-youtube"
@@ -195,6 +195,12 @@ services:
         subtitle: "https://google.drak3.io"
         tag:  "application"
         url:  "https://google.drak3.io"
+
+      - name: "HandBrake"
+        logo: "assets/HandBrake_Icon.png"
+        subtitle: "https://hb.drak3.io"
+        tag:  "application"
+        url:  "https://hb.drak3.io"
 
   - name: "GitHub"
     icon: "fab fa-github"
