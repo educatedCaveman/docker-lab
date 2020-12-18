@@ -17,11 +17,6 @@ connectivityCheck: true # whether you want to display a message when the apps ar
 # Optional theming
 theme: default # 'default' or one of the themes available in 'src/assets/themes'.
 
-# Optional custom stylesheet
-# Will load custom CSS files. Especially useful for custom icon sets.
-# stylesheet:
-#   - "assets/custom.css"
-
 #default colors from github:
 colors:
   light:
@@ -51,14 +46,6 @@ colors:
     link-hover: "#ffdd57"
     background-image: "assets/your/dark/bg.png"
 
-# # Optional message
-# message:
-#   # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
-#   style: "is-warning"
-#   title: "Optional message!"
-#   icon: "fa fa-exclamation-triangle"
-#   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
@@ -66,58 +53,11 @@ links:
     icon: "fab fa-github"
     url: "https://github.com/educatedCaveman"
     target: "_blank" # optional html tag target attribute
-  # - name: "link 2"
-  #   icon: "fas fa-book"
-  #   url: "https://github.com/bastienwirtz/homer"
   - name: "Font Awesome Icons"
     icon: "fab fa-font-awesome"
     url:  "https://fontawesome.com/v4.7.0/icons/"
 
-# Services
-# First level array represents a group.
-# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
-# services:
-#   - name: "Application"
-#     icon: "fas fa-code-branch"
-#     items:
-#       - name: "Awesome app"
-#         logo: "assets/tools/sample.png"
-#         # Alternatively a fa icon can be provided:
-#         # icon: "fab fa-jenkins"
-#         subtitle: "Bookmark example"
-#         tag: "app"
-#         url: "https://www.reddit.com/r/selfhosted/"
-#         target: "_blank" # optional html tag target attribute
-#       - name: "Another one"
-#         logo: "assets/tools/sample2.png"
-#         subtitle: "Another application"
-#         tag: "app"
-#         # Optional tagstyle
-#         tagstyle: "is-success"
-#         url: "#"
-#   - name: "Other group"
-#     icon: "fas fa-heartbeat"
-#     items:
-#       - name: "Pi-hole"
-#         logo: "assets/tools/sample.png"
-#         # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
-#         tag: "other"
-#         url: "http://192.168.0.151/admin"
-#         type: "PiHole" # optional, loads a specific component that provides extra features. MUST MATCH a file name (without file extension) available in `src/components/services`
-#         target: "_blank" # optional html a tag target attribute
-#         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
-#         # background: red # optional color for card to set color directly without custom stylesheet
-
 services:
-  - name: "External Apps"
-    icon: "fas fa-globe"
-    items:
-      - name: "Github"
-        icon: "fab fa-github"
-        subtitle: "Github Repos"
-        tag:  "external"
-        url:  "https://github.com/educatedCaveman"
-
   - name: "Servers"
     icon: "fas fa-server"
     items:
