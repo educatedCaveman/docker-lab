@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /mnt/mobius/docker/ombi/config:/config
+      - /mnt/mobius/docker/ombi/config:/config:rw
     ports:
       - 3579:3579
     restart: unless-stopped
