@@ -1,8 +1,0 @@
-ideas for how to deploy homer
-
-have the configs and any icons/assets in github
-
-use ansible, or jenkins to deploy them
-
-create a way to automate creation and destruction of stacks
- - look into the portain API
