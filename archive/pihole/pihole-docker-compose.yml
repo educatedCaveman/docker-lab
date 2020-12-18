@@ -15,6 +15,7 @@ services:
       WEBPASSWORD: 'password'
     volumes:
       - "/mnt/mobius/docker/pihole/etc/:/etc/"
+      - "/mnt/mobius/docker/pihole/var/:/var/log/"
     dns:
       - 192.168.12.1
     restart: unless-stopped
