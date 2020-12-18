@@ -186,15 +186,15 @@ services:
 
       - name: "VS Code"
         icon: "fas fa-code"
-        subtitle: "nectcloud.vm"
+        subtitle: "https://code.drak3.io"
         tag:  "application"
-        url:  "https://cloud.drak3.io"
+        url:  "https://code.drak3.io"
 
       - name: "Whoogle"
         icon: "fab fa-google"
-        subtitle: "nectcloud.vm"
+        subtitle: "https://google.drak3.io"
         tag:  "application"
-        url:  "https://cloud.drak3.io"
+        url:  "https://google.drak3.io"
 
   - name: "GitHub"
     icon: "fab fa-github"
