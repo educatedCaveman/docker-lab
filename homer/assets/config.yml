@@ -17,11 +17,6 @@ connectivityCheck: true # whether you want to display a message when the apps ar
 # Optional theming
 theme: default # 'default' or one of the themes available in 'src/assets/themes'.
 
-# Optional custom stylesheet
-# Will load custom CSS files. Especially useful for custom icon sets.
-# stylesheet:
-#   - "assets/custom.css"
-
 #default colors from github:
 colors:
   light:
@@ -51,24 +46,12 @@ colors:
     link-hover: "#ffdd57"
     background-image: "assets/your/dark/bg.png"
 
-# # Optional message
-# message:
-#   # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
-#   style: "is-warning"
-#   title: "Optional message!"
-#   icon: "fa fa-exclamation-triangle"
-#   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
-# Optional navbar
-# links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
   - name: "GitHub"
     icon: "fab fa-github"
     url: "https://github.com/educatedCaveman"
     target: "_blank" # optional html tag target attribute
-  # - name: "link 2"
-  #   icon: "fas fa-book"
-  #   url: "https://github.com/bastienwirtz/homer"
+
   - name: "Font Awesome Icons"
     icon: "fab fa-font-awesome"
     url:  "https://fontawesome.com/v4.7.0/icons/"
@@ -108,7 +91,7 @@ links:
 #         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
 #         # background: red # optional color for card to set color directly without custom stylesheet
 
-services:
+Services:
   - name: "Servers"
     icon: "fas fa-server"
     items:
