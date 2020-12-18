@@ -60,7 +60,7 @@ links:
     icon: "fab fa-font-awesome"
     url:  "https://fontawesome.com/v4.7.0/icons/"
 
-Services:
+services:
   - name: "Servers"
     icon: "fas fa-server"
     items:
