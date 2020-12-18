@@ -180,9 +180,9 @@ services:
 
       - name: "YouTube DL"
         icon: "fab fa-youtube"
-        subtitle: "nectcloud.vm"
+        subtitle: "https://ytdl.drak3.io"
         tag:  "application"
-        url:  "https://cloud.drak3.io"
+        url:  "https://ytdl.drak3.io"
 
       - name: "VS Code"
         icon: "fas fa-code"
