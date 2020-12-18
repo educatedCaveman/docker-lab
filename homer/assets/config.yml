@@ -178,6 +178,12 @@ services:
         tag:  "application"
         url:  "https://plex.drak3.io"
 
+      - name: "Ombi"
+        logo: "assets/ombi_icon.png"
+        subtitle: "https://ombi.drak3.io"
+        tag:  "application"
+        url:  "https://ombi.drak3.io"
+
       - name: "YouTube DL"
         icon: "fab fa-youtube"
         subtitle: "https://ytdl.drak3.io"
