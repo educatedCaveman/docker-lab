@@ -20,7 +20,7 @@ pipeline {
             steps {
                 // deploy configs to DEV
                 echo 'deploy docker config files (DEV)'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_docker_dev.yaml'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_docker_dev.yml'
             }
         }
 
@@ -42,7 +42,7 @@ pipeline {
             steps {
                 // deploy configs to PRD
                 echo 'deploy docker config files (PRD)'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_docker_prd.yaml'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy_docker_prd.yml'
             }
         }
 
