@@ -202,6 +202,12 @@ services:
         tag:  "application"
         url:  "https://hb.drak3.io"
 
+      - name: "Guacamole"
+        logo: "assets/guacamole-logo.png"
+        subtitle: "https://guac.drak3.io"
+        tag:  "application"
+        url:  "https://guac.drak3.io"
+
   - name: "GitHub"
     icon: "fab fa-github"
     items:
