@@ -1,0 +1,16 @@
+---
+version: "2"
+services:
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+     - WATCHTOWER_NOTIFICATIONS=slack
+     - WATCHTOWER_NOTIFICATIONS_LEVEL=info
+     - WATCHTOWER_NOTIFICATION_SLACK_HOOK_URL=/mnt/mobius/watchtower/slack.webhook
+     - WATCHTOWER_NOTIFICATION_SLACK_CHANNEL=#notifications
+    command:
+      --cleanup true
+      --rolling-restart true
+      --interval 30
