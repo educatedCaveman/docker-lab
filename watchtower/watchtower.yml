@@ -5,12 +5,13 @@ services:
     image: containrrr/watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - /mnt/mobius/docker/watchtower/slack_webhook.env:/etc/slack_webhook.env
     environment:
      - WATCHTOWER_NOTIFICATIONS=slack
      - WATCHTOWER_NOTIFICATIONS_LEVEL=info
-     - WATCHTOWER_NOTIFICATION_SLACK_HOOK_URL=/mnt/mobius/docker/watchtower/slack.webhook
      - WATCHTOWER_NOTIFICATION_SLACK_CHANNEL=#notifications
-    command:
-      --cleanup true
-      --rolling-restart true
-      --interval 30
+     - WATCHTOWER_CLEANUP=true
+     - WATCHTOWER_ROLLING_RESTART=true
+     - WATCH_TEST=${/etc/slack_webhook.env}
+    restart: unless-stopped
+    network_mode: "bridge"
