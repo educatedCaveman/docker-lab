@@ -16,7 +16,8 @@ services:
       - DB_USERNAME=librespeed
       - DB_PASSWORD=3yKmZE49Ozf4d4q4XlFOJCzv7F8DNE8TCjJApNP2
     volumes:
-      - /mmt/mobius/docker/librespeed/config:/config
+      - /mnt/mobius/docker/librespeed/config:/config
     ports:
       - 8082:80
     restart: unless-stopped
+    
