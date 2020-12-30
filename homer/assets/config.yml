@@ -100,6 +100,28 @@ services:
         tag:  "admin"
         url:  "http://192.168.1.10"
 
+  - name: "Plex"
+    logo: "assets/plex.svg"
+    items:
+
+      - name: "Plex"
+        logo: "assets/plex.svg"
+        subtitle: "https://plex.drak3.io"
+        tag:  "application"
+        url:  "https://plex.drak3.io"
+
+      - name: "Ombi"
+        logo: "assets/ombi_icon.png"
+        subtitle: "https://ombi.drak3.io"
+        tag:  "application"
+        url:  "https://ombi.drak3.io"
+
+      - name: "Tautulli"
+        logo: "assets/tautulli.png"
+        subtitle: "Tautulli"
+        tag:  "Services"
+        url:  "https://tau.drak3.io/"
+
   - name: "Services"
     icon: "fas fa-server"
     items:
@@ -146,14 +168,8 @@ services:
         tag:  "Services"
         url:  "https://s3.drak3.io/"
 
-      - name: "Tautulli"
-        logo: "assets/tautulli.png"
-        subtitle: "Tautulli"
-        tag:  "Services"
-        url:  "https://tau.drak3.io/"
-
   - name: "Pi-Hole"
-    logo: "assets/pi_hole_icon_BW.svg"
+    icon: "fas fa-play-circle"
     items:
 
       - name: "Singularity"
@@ -184,12 +200,6 @@ services:
         tag:  "application"
         url:  "https://cloud.drak3.io"
 
-      - name: "Plex"
-        logo: "assets/plex.svg"
-        subtitle: "https://plex.drak3.io"
-        tag:  "application"
-        url:  "https://plex.drak3.io"
-
       - name: "YouTube DL"
         icon: "fab fa-youtube"
         subtitle: "https://ytdl.drak3.io"
@@ -219,12 +229,6 @@ services:
         subtitle: "https://guac.drak3.io"
         tag:  "application"
         url:  "https://guac.drak3.io"
-
-      - name: "Ombi"
-        logo: "assets/ombi_icon.png"
-        subtitle: "https://ombi.drak3.io"
-        tag:  "application"
-        url:  "https://ombi.drak3.io"
 
       - name: "MineOS"
         logo: "assets/minecraft.png"
