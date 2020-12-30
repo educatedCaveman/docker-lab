@@ -1,0 +1,12 @@
+---
+version: "2.1"
+services:
+  snibox:
+    image: snowmean/snibox-sqlite
+    container_name: snibox
+    volumes:
+      - /mnt/mobius/docker/snibox/db:/app/db/database
+    ports:
+      - 3010:3000
+    restart: unless-stopped
+    
