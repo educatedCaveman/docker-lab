@@ -146,6 +146,12 @@ services:
         tag:  "Services"
         url:  "https://s3.drak3.io/"
 
+      - name: "Tautulli"
+        logo: "assets/tautulli.png"
+        subtitle: "Tautulli"
+        tag:  "Services"
+        url:  "https://tau.drak3.io/"
+
   - name: "Pi-Hole"
     logo: "assets/pi_hole_icon_BW.svg"
     items:
