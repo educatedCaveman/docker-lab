@@ -140,6 +140,12 @@ services:
         tag:  "Services"
         url:  "https://git.drak3.io/"
 
+      - name: "Minio"
+        logo: "assets/minio.jpg"
+        subtitle: "Minio"
+        tag:  "Services"
+        url:  "https://s3.drak3.io/"
+
   - name: "Pi-Hole"
     logo: "assets/pi_hole_icon_BW.svg"
     items:
