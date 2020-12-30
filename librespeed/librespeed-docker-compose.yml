@@ -1,0 +1,22 @@
+---
+version: "2.1"
+services:
+  librespeed:
+    image: ghcr.io/linuxserver/librespeed
+    container_name: librespeed
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+      - PASSWORD=4Jeqxb3Q6u5fJYJkgbN3OdzsI5LE6H9uTz6LBcO8
+      - CUSTOM_RESULTS=true
+      - DB_TYPE=sqlite
+      - DB_NAME=librespeed
+      - DB_HOSTNAME=librespeed
+      - DB_USERNAME=librespeed
+      - DB_PASSWORD=3yKmZE49Ozf4d4q4XlFOJCzv7F8DNE8TCjJApNP2
+    volumes:
+      - /mmt/mobius/docker/librespeed/config:/config
+    ports:
+      - 8082:80
+    restart: unless-stopped
