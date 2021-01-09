@@ -8,8 +8,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/New_York
-      - PASSWORD=password #optional
-      - SUDO_PASSWORD=password #optional
+      - PASSWORD=Uid5N5iAGloDFoAzsZZE5UGGcXtDhT5r1Tcm7YgC
+      - SUDO_PASSWORD=Uid5N5iAGloDFoAzsZZE5UGGcXtDhT5r1Tcm7YgC
     volumes:
       - /mnt/mobius/docker/code/config:/config:Z
     ports:
