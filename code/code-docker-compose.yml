@@ -1,5 +1,5 @@
 ---
-version: '2'
+version: '3'
 services:
   code-server:
     image: linuxserver/code-server
@@ -15,3 +15,12 @@ services:
     ports:
       - 9443:8443
     restart: unless-stopped
+    deploy:
+      mode: global
+      update_config:
+        parallelism: 1
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints: [node.role == worker]
