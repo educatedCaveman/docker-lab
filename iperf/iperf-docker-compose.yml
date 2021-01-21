@@ -1,62 +1,18 @@
 ---
-version: '2'
+version: "3"
 services:
   iperf3_01:
     image: mlabbe/iperf3
     ports:
       - 5201:5201
     restart: unless-stopped
-
-  iperf3_02:
-    image: mlabbe/iperf3
-    ports:
-      - 5202:5201
-    restart: unless-stopped
-
-  iperf3_03:
-    image: mlabbe/iperf3
-    ports:
-      - 5203:5201
-    restart: unless-stopped
-
-  iperf3_04:
-    image: mlabbe/iperf3
-    ports:
-      - 5204:5201
-    restart: unless-stopped
-
-  iperf3_05:
-    image: mlabbe/iperf3
-    ports:
-      - 5205:5201
-    restart: unless-stopped
-
-  iperf3_06:
-    image: mlabbe/iperf3
-    ports:
-      - 5206:5201
-    restart: unless-stopped
-
-  iperf3_07:
-    image: mlabbe/iperf3
-    ports:
-      - 5207:5201
-    restart: unless-stopped
-
-  iperf3_08:
-    image: mlabbe/iperf3
-    ports:
-      - 5208:5201
-    restart: unless-stopped
-
-  iperf3_09:
-    image: mlabbe/iperf3
-    ports:
-      - 5209:5201
-    restart: unless-stopped
-
-  iperf3_10:
-    image: mlabbe/iperf3
-    ports:
-      - 5210:5201
-    restart: unless-stopped
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints: [node.role == worker]
+    network_mode: "bridge"
