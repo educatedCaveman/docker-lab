@@ -32,7 +32,7 @@ pipeline {
             steps {
                 // deploy configs to DEV
                 echo 'deploy docker compose to portainer'
-                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control.py --env=DEV --repo=${LOCAL_REPO_DEV}'
+                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control_swarm.py --env=DEV --repo=${LOCAL_REPO_DEV}'
             }
         }
 
@@ -54,7 +54,7 @@ pipeline {
             steps {
                 // deploy configs to DEV
                 echo 'deploy docker compose to portainer'
-                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control.py --env=PRD --repo=${LOCAL_REPO_PRD}'
+                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control_swarm.py --env=PRD --repo=${LOCAL_REPO_PRD}'
             }
         }
     }
