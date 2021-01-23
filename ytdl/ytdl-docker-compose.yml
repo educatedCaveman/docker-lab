@@ -14,10 +14,7 @@ services:
       - "8998:17442"
     image: tzahi12345/youtubedl-material:latest
     deploy:
-      mode: global
-      update_config:
-        parallelism: 1
-        delay: 10s
+      replicas: 1
       restart_policy:
         condition: on-failure
       placement:
