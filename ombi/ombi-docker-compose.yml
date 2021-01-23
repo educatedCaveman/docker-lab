@@ -1,9 +1,8 @@
 ---
-version: 2
+version: '3'
 services:
   ombi:
     image: linuxserver/ombi
-    container_name: ombi
     environment:
       - PUID=1000
       - PGID=1000
@@ -13,3 +12,12 @@ services:
     ports:
       - 3579:3579
     restart: unless-stopped
+    deploy:
+      mode: global
+      update_config:
+        parallelism: 1
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints: [node.role == worker]
