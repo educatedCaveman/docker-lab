@@ -1,5 +1,5 @@
 ---
-version: 2
+version: '3'
 services:
   ytdl_material:
     environment:
@@ -13,3 +13,12 @@ services:
     ports:
       - "8998:17442"
     image: tzahi12345/youtubedl-material:latest
+    deploy:
+      mode: global
+      update_config:
+        parallelism: 1
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints: [node.role == worker]
