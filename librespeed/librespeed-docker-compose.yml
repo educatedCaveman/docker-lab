@@ -3,7 +3,6 @@ version: '3'
 services:
   librespeed:
     image: ghcr.io/linuxserver/librespeed
-    container_name: librespeed
     environment:
       - PUID=1000
       - PGID=1000
