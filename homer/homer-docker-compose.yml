@@ -1,4 +1,4 @@
-#homer docker compose
+#homer docker compose (swarm)
 ---
 version: '3'
 services:
