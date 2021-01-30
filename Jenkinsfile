@@ -11,7 +11,6 @@ pipeline {
     }
 
     stages {
-
         // deploy code to lv-426.lab, when the branch is 'dev_test'
         stage('deploy dev code') {
             when { 
