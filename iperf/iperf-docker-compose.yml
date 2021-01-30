@@ -1,6 +1,6 @@
 # iperf3 docker compose (swarm)
 ---
-version: "3"
+version: '3'
 services:
   iperf3:
     image: mlabbe/iperf3

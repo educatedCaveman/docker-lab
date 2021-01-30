@@ -1,5 +1,7 @@
 docker swarm init
 
+docker swarm join-token manager
+
 join managers:
 docker swarm join --token SWMTKN-1-0q9pdvn5j8rfiwxjopkvbgxxaidwxbasfvq7zwqumrs01oaagm-behyeu143dylt639j5cg47v1w 192.168.13.25:2377
 

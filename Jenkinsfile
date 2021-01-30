@@ -6,8 +6,8 @@ pipeline {
         SCRIPTS_REPO = '/var/lib/jenkins/workspace/scripts_master'
         PORTAINER_DEV_PASS = credentials('PORTAINER_DEV_PASS')
         PORTAINER_PRD_PASS = credentials('PORTAINER_PRD_PASS')
-        LOCAL_REPO_DEV = '/var/lib/jenkins/workspace/Docker_dev_test'
-        LOCAL_REPO_PRD = '/var/lib/jenkins/workspace/Docker_master'
+        LOCAL_REPO_DEV = '/var/lib/jenkins/workspace/docker_dev_test'
+        LOCAL_REPO_PRD = '/var/lib/jenkins/workspace/docker_master'
     }
 
     stages {
