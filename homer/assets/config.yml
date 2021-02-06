@@ -169,6 +169,12 @@ services:
         tag:  "Services"
         url:  "https://s3.drak3.io/"
 
+      - name: "Apt Cache NG"
+        logo: "fab linux"
+        subtitle: "apt-cache.vm"
+        tag:  "Services"
+        url:  "https://apt-cache.drak3.io/acng-report.html"
+
   - name: "Pi-Hole"
     icon: "fas fa-play-circle"
     items:
