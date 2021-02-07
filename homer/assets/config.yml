@@ -175,6 +175,12 @@ services:
         tag:  "Services"
         url:  "https://apt-cache.drak3.io/acng-report.html"
 
+      - name: "Apt Mirror"
+        logo: "fab linux"
+        subtitle: "apt-mirror.vm"
+        tag:  "Services"
+        url:  "https://apt-mirror.drak3.io/ubuntu"
+
   - name: "Pi-Hole"
     icon: "fas fa-play-circle"
     items:
