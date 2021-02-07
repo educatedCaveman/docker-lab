@@ -6,7 +6,7 @@ services:
     image: oznu/guacamole
     container_name: guacamole
     volumes:
-      - /mnt/mobius/docker/guacamole/config:/config
+      - /docker/guacamole/config:/config
       - /mnt/mobius/docker/guacamole/etc_guacamole:/etc/guacamole
     ports:
       - 8081:8080
