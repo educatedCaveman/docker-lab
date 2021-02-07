@@ -176,7 +176,7 @@ services:
         url:  "https://apt-cache.drak3.io/acng-report.html"
 
       - name: "Apt Mirror"
-        logo: "fab linux"
+        icon: "fab linux"
         subtitle: "apt-mirror.vm"
         tag:  "Services"
         url:  "https://apt-mirror.drak3.io/ubuntu"
