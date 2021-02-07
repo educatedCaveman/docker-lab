@@ -11,7 +11,7 @@ pipeline {
     }
 
     stages {
-        // tear down the changed stacks
+        // tear down the changed DEV stacks
         stage('destroy dev stacks') {
             when { 
                 expression { env.BRANCH_NAME == 'dev_test' } 
@@ -45,7 +45,18 @@ pipeline {
             }
         }
 
-        // deploy code to sevastopol.vm, when the branch is 'master'
+        // tear down the changed PRD stacks
+        stage('destroy prd stacks') {
+            when { 
+                expression { env.BRANCH_NAME == 'master' } 
+            }
+            steps {
+                // deploy configs to DEV
+                echo 'deploy docker compose to portainer'
+                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control_swarm.py --env=PRD --repo=${LOCAL_REPO_PRD} --action=DOWN'
+            }
+        }
+        // deploy code to sevastopol, when the branch is 'master'
         stage('deploy prd code') {
             when { branch 'master' }
             steps {
@@ -55,7 +66,7 @@ pipeline {
             }
         }
 
-        // deploy to lv-426.lab whent the branch is dev_test
+        // deploy to sevastopol whent the branch is dev_test
         stage('deploy prd stacks') {
             when { 
                 expression { env.BRANCH_NAME == 'master' } 
@@ -63,7 +74,7 @@ pipeline {
             steps {
                 // deploy configs to DEV
                 echo 'deploy docker compose to portainer'
-                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control_swarm.py --env=PRD --repo=${LOCAL_REPO_PRD}'
+                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control_swarm.py --env=PRD --repo=${LOCAL_REPO_PRD} --action=UP'
             }
         }
     }

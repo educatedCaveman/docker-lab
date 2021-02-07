@@ -170,13 +170,13 @@ services:
         url:  "https://s3.drak3.io/"
 
       - name: "Apt Cache NG"
-        icon: "fas fa-cube"
+        icon: "fas fa-cubes"
         subtitle: "apt-cache.vm"
         tag:  "Services"
         url:  "https://apt-cache.drak3.io/acng-report.html"
 
       - name: "Apt Mirror"
-        icon: "fas fa-cubes"
+        icon: "fas fa-cube"
         subtitle: "apt-mirror.vm"
         tag:  "Services"
         url:  "https://apt-mirror.drak3.io/ubuntu"
