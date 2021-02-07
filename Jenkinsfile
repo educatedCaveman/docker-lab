@@ -11,6 +11,17 @@ pipeline {
     }
 
     stages {
+        // tear down the changed stacks
+        stage('destroy dev stacks') {
+            when { 
+                expression { env.BRANCH_NAME == 'dev_test' } 
+            }
+            steps {
+                // deploy configs to DEV
+                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control_swarm.py --env=DEV --repo=${LOCAL_REPO_DEV} --action=DOWN'
+            }
+        }
+
         // deploy code to lv-426.lab, when the branch is 'dev_test'
         stage('deploy dev code') {
             when { 
@@ -30,8 +41,7 @@ pipeline {
             }
             steps {
                 // deploy configs to DEV
-                echo 'deploy docker compose to portainer'
-                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control_swarm.py --env=DEV --repo=${LOCAL_REPO_DEV}'
+                sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control_swarm.py --env=DEV --repo=${LOCAL_REPO_DEV} --action=UP'
             }
         }
 
