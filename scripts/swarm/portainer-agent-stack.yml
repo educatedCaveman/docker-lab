@@ -20,7 +20,7 @@ services:
       - "9000:9000"
       - "8000:8000"
     volumes:
-      - /mnt/mobius/docker/portainer_HA:/data
+      - /mnt/gluster/portainer_HA:/data
     networks:
       - agent_network
     deploy:
