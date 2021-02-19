@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /docker/ombi/config:/config
+      - /mnt/gluster/ombi/config:/config
     ports:
       - 3579:3579
     restart: unless-stopped

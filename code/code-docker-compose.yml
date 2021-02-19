@@ -13,7 +13,7 @@ services:
       - PASSWORD=Uid5N5iAGloDFoAzsZZE5UGGcXtDhT5r1Tcm7YgC
       - SUDO_PASSWORD=Uid5N5iAGloDFoAzsZZE5UGGcXtDhT5r1Tcm7YgC
     volumes:
-      - /docker/code/config:/config:Z
+      - /mnt/gluster/code/config:/config:Z
     ports:
       - 9443:8443
     restart: unless-stopped
