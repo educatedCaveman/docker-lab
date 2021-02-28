@@ -1,4 +1,3 @@
-# handbrake docker compose (swarm)
 ---
 # this comment is a hack
 version: '3'
@@ -9,9 +8,9 @@ services:
       - "5800:5800"
     volumes:
       - /mnt/gluster/handbrake:/config:rw
-      - /mnt/mobius/staging/handbrake/storage:/storage:ro
-      - /mnt/mobius/staging/handbrake/watch:/watch:rw
-      - /mnt/mobius/staging/handbrake/output:/output:rw
+      - /mnt/gluster/handbrake/storage:/storage:ro
+      - /mnt/gluster/handbrake/watch:/watch:rw
+      - /mnt/gluster/handbrake/output:/output:rw
     restart: unless-stopped
     deploy:
       mode: global

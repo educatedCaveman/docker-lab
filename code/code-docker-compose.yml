@@ -1,4 +1,3 @@
-# VScode docker compose (swarm)
 ---
 # this comment is a hack
 version: '3'
