@@ -1,6 +1,6 @@
 # ombi docker compose (swarm)
 ---
-# this comment is a hack
+# this comment is a hack - as is this
 version: '3'
 services:
   ombi:
@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /docker/ombi/config:/config
+      - /mnt/gluster/ombi/config:/config
     ports:
       - 3579:3579
     restart: unless-stopped

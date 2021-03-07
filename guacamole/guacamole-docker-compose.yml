@@ -1,13 +1,13 @@
 # guacamole docker compose (swarm)
 ---
-# this comment is a hack
+# this comment is a hack - as is this
 version: '3'
 services:
   guacamole:
     image: oznu/guacamole
     container_name: guacamole
     volumes:
-      - /docker/guacamole/config:/config
+      - /mnt/gluster/guacamole/config:/config
       - /mnt/mobius/docker/guacamole/etc_guacamole:/etc/guacamole
     ports:
       - 8081:8080

@@ -1,13 +1,13 @@
 #homer docker compose (swarm)
 ---
-# this comment is a hack
+# this comment is a hack - as is this
 version: '3'
 services:
   homer:
     image: b4bz/homer
     container_name: homer
     volumes:
-      - /docker/homer/assets/:/www/assets
+      - /mnt/gluster/homer/assets/:/www/assets
     ports:
       - 8080:8080
     environment:
