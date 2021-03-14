@@ -135,23 +135,6 @@ services:
         tag:  "Services"
         url:  "https://tau.drak3.io/"
 
-
-  - name: "Plex (DEV)"
-    logo: "assets/plex.svg"
-    items:
-
-      - name: "Ombi"
-        logo: "assets/ombi_icon.png"
-        subtitle: "https://ombi.dev.drak3.io"
-        tag:  "application"
-        url:  "https://ombi.dev.drak3.io"
-
-      - name: "Tautulli"
-        logo: "assets/tautulli.png"
-        subtitle: "Tautulli"
-        tag:  "Services"
-        url:  "https://tau.dev.drak3.io/"
-
   - name: "Data Services"
     icon: "fas fa-server"
     items:
@@ -291,6 +274,23 @@ services:
         subtitle: "https://ytdl.drak3.io"
         tag:  "application"
         url:  "https://ytdl.drak3.io"
+
+
+  - name: "Plex (DEV)"
+    logo: "assets/plex.svg"
+    items:
+
+      - name: "Ombi"
+        logo: "assets/ombi_icon.png"
+        subtitle: "https://ombi.dev.drak3.io"
+        tag:  "application"
+        url:  "https://ombi.dev.drak3.io"
+
+      - name: "Tautulli"
+        logo: "assets/tautulli.png"
+        subtitle: "Tautulli"
+        tag:  "Services"
+        url:  "https://tau.dev.drak3.io/"
 
   - name: "Media Applications (DEV)"
     icon: "fas fa-user"
