@@ -80,6 +80,18 @@ services:
         tag:  "Server"
         url:  "https://unifi.drak3.io"
 
+      - name: "Guacamole"
+        logo: "assets/guacamole-logo.png"
+        subtitle: "https://guac.drak3.io"
+        tag:  "application"
+        url:  "https://guac.drak3.io"
+
+      - name: "Guacamole"
+        logo: "assets/guacamole-logo.png"
+        subtitle: "https://guac.dev.drak3.io"
+        tag:  "application"
+        url:  "https://guac.dev.drak3.io"
+
   - name: "iDRAC / IPMI"
     icon: "fas fa-server"
     items:
@@ -156,6 +168,12 @@ services:
         tag:  "Services"
         url:  "https://s3.drak3.io/"
 
+      - name: "NextCloud"
+        logo: "assets/Nextcloud_Logo.svg"
+        subtitle: "nectcloud.vm"
+        tag:  "application"
+        url:  "https://cloud.drak3.io"
+
   - name: "Development Services"
     icon: "fas fa-server"
     items:
@@ -171,6 +189,18 @@ services:
         subtitle: "Gitea"
         tag:  "Services"
         url:  "https://git.drak3.io/"
+
+      - name: "VS Code"
+        icon: "fas fa-code"
+        subtitle: "https://code.drak3.io"
+        tag:  "application"
+        url:  "https://code.drak3.io"
+
+      - name: "VS Code (DEV)"
+        icon: "fas fa-code"
+        subtitle: "https://code.dev.drak3.io"
+        tag:  "application"
+        url:  "https://code.dev.drak3.io"
 
   - name: "Portainer"
     icon: "fas fa-server"
@@ -220,7 +250,27 @@ services:
         tag:  "pihole"
         url:  "https://pihole2.drak3.io/admin/index.php"
 
-  - name: "Applications"
+  - name: "Privacy"
+    icon: "fas fa-user"
+    items:
+
+      - name: "Whoogle"
+        icon: "fab fa-google"
+        subtitle: "https://google.drak3.io"
+        tag:  "application"
+        url:  "https://google.drak3.io"
+
+  - name: "Games/Entertainment"
+    icon: "fas fa-user"
+    items:
+
+      - name: "MineOS"
+        logo: "assets/minecraft.png"
+        subtitle: "https://mineos.drak3.io"
+        tag:  "application"
+        url:  "https://mineos.drak3.io"
+
+  - name: "Media Applications"
     icon: "fas fa-user"
     items:
 
@@ -230,11 +280,11 @@ services:
         tag:  "Services"
         url:  "https://qbt.drak3.io/"
 
-      - name: "NextCloud"
-        logo: "assets/Nextcloud_Logo.svg"
-        subtitle: "nectcloud.vm"
+      - name: "HandBrake"
+        logo: "assets/HandBrake_Icon.png"
+        subtitle: "https://hb.drak3.io"
         tag:  "application"
-        url:  "https://cloud.drak3.io"
+        url:  "https://hb.drak3.io"
 
       - name: "YouTube DL"
         icon: "fab fa-youtube"
@@ -242,35 +292,21 @@ services:
         tag:  "application"
         url:  "https://ytdl.drak3.io"
 
-      - name: "VS Code"
-        icon: "fas fa-code"
-        subtitle: "https://code.drak3.io"
-        tag:  "application"
-        url:  "https://code.drak3.io"
-
-      - name: "Whoogle"
-        icon: "fab fa-google"
-        subtitle: "https://google.drak3.io"
-        tag:  "application"
-        url:  "https://google.drak3.io"
+  - name: "Media Applications (DEV)"
+    icon: "fas fa-user"
+    items:
 
       - name: "HandBrake"
         logo: "assets/HandBrake_Icon.png"
-        subtitle: "https://hb.drak3.io"
+        subtitle: "https://hb.dev.drak3.io"
         tag:  "application"
-        url:  "https://hb.drak3.io"
+        url:  "https://hb.dev.drak3.io"
 
-      - name: "Guacamole"
-        logo: "assets/guacamole-logo.png"
-        subtitle: "https://guac.drak3.io"
+      - name: "YouTube DL (DEV)"
+        icon: "fab fa-youtube"
+        subtitle: "https://ytdl.dev.drak3.io"
         tag:  "application"
-        url:  "https://guac.drak3.io"
-
-      - name: "MineOS"
-        logo: "assets/minecraft.png"
-        subtitle: "https://mineos.drak3.io"
-        tag:  "application"
-        url:  "https://mineos.drak3.io"
+        url:  "https://ytdl.dev.drak3.io"
 
   - name: "GitHub"
     icon: "fab fa-github"
