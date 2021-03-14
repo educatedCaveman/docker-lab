@@ -80,6 +80,18 @@ services:
         tag:  "Server"
         url:  "https://unifi.drak3.io"
 
+      - name: "Guacamole"
+        logo: "assets/guacamole-logo.png"
+        subtitle: "https://guac.drak3.io"
+        tag:  "application"
+        url:  "https://guac.drak3.io"
+
+      - name: "Guacamole"
+        logo: "assets/guacamole-logo.png"
+        subtitle: "https://guac.dev.drak3.io"
+        tag:  "application"
+        url:  "https://guac.dev.drak3.io"
+
   - name: "iDRAC / IPMI"
     icon: "fas fa-server"
     items:
@@ -123,7 +135,29 @@ services:
         tag:  "Services"
         url:  "https://tau.drak3.io/"
 
-  - name: "Services"
+  - name: "Data Services"
+    icon: "fas fa-server"
+    items:
+
+      - name: "Syncthing"
+        logo: "assets/syncthing.png"
+        subtitle: "syncthing.vm"
+        tag:  "Services"
+        url:  "https://sync.drak3.io/syncthing/"
+
+      - name: "Minio"
+        logo: "assets/minio.jpg"
+        subtitle: "Minio"
+        tag:  "Services"
+        url:  "https://s3.drak3.io/"
+
+      - name: "NextCloud"
+        logo: "assets/Nextcloud_Logo.svg"
+        subtitle: "nectcloud.vm"
+        tag:  "application"
+        url:  "https://cloud.drak3.io"
+
+  - name: "Development Services"
     icon: "fas fa-server"
     items:
 
@@ -132,6 +166,28 @@ services:
         subtitle: "jenkins.vm"
         tag:  "Services"
         url:  "https://jenkins.drak3.io/"
+
+      - name: "Gitea"
+        logo: "assets/Gitea_Logo.svg"
+        subtitle: "Gitea"
+        tag:  "Services"
+        url:  "https://git.drak3.io/"
+
+      - name: "VS Code"
+        icon: "fas fa-code"
+        subtitle: "https://code.drak3.io"
+        tag:  "application"
+        url:  "https://code.drak3.io"
+
+      - name: "VS Code (DEV)"
+        icon: "fas fa-code"
+        subtitle: "https://code.dev.drak3.io"
+        tag:  "application"
+        url:  "https://code.dev.drak3.io"
+
+  - name: "Portainer"
+    icon: "fas fa-server"
+    items:
 
       - name: "Portainer (PRD)"
         logo: "assets/docker.png"
@@ -145,29 +201,9 @@ services:
         tag:  "Services"
         url:  "https://portainer.dev.drak3.io/"
 
-      - name: "qBittorrent"
-        logo: "assets/qbittorrent.png"
-        subtitle: "qbittorrent.vm"
-        tag:  "Services"
-        url:  "https://qbt.drak3.io/"
-
-      - name: "Syncthing"
-        logo: "assets/syncthing.png"
-        subtitle: "syncthing.vm"
-        tag:  "Services"
-        url:  "https://sync.drak3.io/syncthing/"
-
-      - name: "Gitea"
-        logo: "assets/Gitea_Logo.svg"
-        subtitle: "Gitea"
-        tag:  "Services"
-        url:  "https://git.drak3.io/"
-
-      - name: "Minio"
-        logo: "assets/minio.jpg"
-        subtitle: "Minio"
-        tag:  "Services"
-        url:  "https://s3.drak3.io/"
+  - name: "Package Management"
+    icon: "fas fa-server"
+    items:
 
       - name: "Apt Cache NG"
         icon: "fas fa-cubes"
@@ -197,33 +233,9 @@ services:
         tag:  "pihole"
         url:  "https://pihole2.drak3.io/admin/index.php"
 
-      - name: "Pi-Hole (docker)"
-        logo: "assets/Pi-hole_vector_logo.svg.png"
-        subtitle: "tbd.drak3.io"
-        tag:  "pihole"
-        url:  "https://duckduckgo.com"
-
-  - name: "Applications"
+  - name: "Privacy"
     icon: "fas fa-user"
     items:
-
-      - name: "NextCloud"
-        logo: "assets/Nextcloud_Logo.svg"
-        subtitle: "nectcloud.vm"
-        tag:  "application"
-        url:  "https://cloud.drak3.io"
-
-      - name: "YouTube DL"
-        icon: "fab fa-youtube"
-        subtitle: "https://ytdl.drak3.io"
-        tag:  "application"
-        url:  "https://ytdl.drak3.io"
-
-      - name: "VS Code"
-        icon: "fas fa-code"
-        subtitle: "https://code.drak3.io"
-        tag:  "application"
-        url:  "https://code.drak3.io"
 
       - name: "Whoogle"
         icon: "fab fa-google"
@@ -231,23 +243,70 @@ services:
         tag:  "application"
         url:  "https://google.drak3.io"
 
-      - name: "HandBrake"
-        logo: "assets/HandBrake_Icon.png"
-        subtitle: "https://hb.drak3.io"
-        tag:  "application"
-        url:  "https://hb.drak3.io"
-
-      - name: "Guacamole"
-        logo: "assets/guacamole-logo.png"
-        subtitle: "https://guac.drak3.io"
-        tag:  "application"
-        url:  "https://guac.drak3.io"
+  - name: "Games/Entertainment"
+    icon: "fas fa-user"
+    items:
 
       - name: "MineOS"
         logo: "assets/minecraft.png"
         subtitle: "https://mineos.drak3.io"
         tag:  "application"
         url:  "https://mineos.drak3.io"
+
+  - name: "Media Applications"
+    icon: "fas fa-user"
+    items:
+
+      - name: "qBittorrent"
+        logo: "assets/qbittorrent.png"
+        subtitle: "qbittorrent.vm"
+        tag:  "Services"
+        url:  "https://qbt.drak3.io/"
+
+      - name: "HandBrake"
+        logo: "assets/HandBrake_Icon.png"
+        subtitle: "https://hb.drak3.io"
+        tag:  "application"
+        url:  "https://hb.drak3.io"
+
+      - name: "YouTube DL"
+        icon: "fab fa-youtube"
+        subtitle: "https://ytdl.drak3.io"
+        tag:  "application"
+        url:  "https://ytdl.drak3.io"
+
+
+  - name: "Plex (DEV)"
+    logo: "assets/plex.svg"
+    items:
+
+      - name: "Ombi"
+        logo: "assets/ombi_icon.png"
+        subtitle: "https://ombi.dev.drak3.io"
+        tag:  "application"
+        url:  "https://ombi.dev.drak3.io"
+
+      - name: "Tautulli"
+        logo: "assets/tautulli.png"
+        subtitle: "Tautulli"
+        tag:  "Services"
+        url:  "https://tau.dev.drak3.io/"
+
+  - name: "Media Applications (DEV)"
+    icon: "fas fa-user"
+    items:
+
+      - name: "HandBrake"
+        logo: "assets/HandBrake_Icon.png"
+        subtitle: "https://hb.dev.drak3.io"
+        tag:  "application"
+        url:  "https://hb.dev.drak3.io"
+
+      - name: "YouTube DL (DEV)"
+        icon: "fab fa-youtube"
+        subtitle: "https://ytdl.dev.drak3.io"
+        tag:  "application"
+        url:  "https://ytdl.dev.drak3.io"
 
   - name: "GitHub"
     icon: "fab fa-github"
@@ -280,5 +339,11 @@ services:
       - name: "Jenkins"
         icon: "fab fa-github"
         subtitle: "Jenkins Git Repo"
+        tag:  "GitHub"
+        url:  "https://github.com/educatedCaveman/Jenkins"
+    
+      - name: "Documentation"
+        icon: "fab fa-github"
+        subtitle: "Documentation Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/Jenkins"
