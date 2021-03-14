@@ -123,7 +123,40 @@ services:
         tag:  "Services"
         url:  "https://tau.drak3.io/"
 
-  - name: "Services"
+
+  - name: "Plex (DEV)"
+    logo: "assets/plex.svg"
+    items:
+
+      - name: "Ombi"
+        logo: "assets/ombi_icon.png"
+        subtitle: "https://ombi.dev.drak3.io"
+        tag:  "application"
+        url:  "https://ombi.dev.drak3.io"
+
+      - name: "Tautulli"
+        logo: "assets/tautulli.png"
+        subtitle: "Tautulli"
+        tag:  "Services"
+        url:  "https://tau.dev.drak3.io/"
+
+  - name: "Data Services"
+    icon: "fas fa-server"
+    items:
+
+      - name: "Syncthing"
+        logo: "assets/syncthing.png"
+        subtitle: "syncthing.vm"
+        tag:  "Services"
+        url:  "https://sync.drak3.io/syncthing/"
+
+      - name: "Minio"
+        logo: "assets/minio.jpg"
+        subtitle: "Minio"
+        tag:  "Services"
+        url:  "https://s3.drak3.io/"
+
+  - name: "Development Services"
     icon: "fas fa-server"
     items:
 
@@ -132,6 +165,16 @@ services:
         subtitle: "jenkins.vm"
         tag:  "Services"
         url:  "https://jenkins.drak3.io/"
+
+      - name: "Gitea"
+        logo: "assets/Gitea_Logo.svg"
+        subtitle: "Gitea"
+        tag:  "Services"
+        url:  "https://git.drak3.io/"
+
+  - name: "Portainer"
+    icon: "fas fa-server"
+    items:
 
       - name: "Portainer (PRD)"
         logo: "assets/docker.png"
@@ -145,29 +188,9 @@ services:
         tag:  "Services"
         url:  "https://portainer.dev.drak3.io/"
 
-      - name: "qBittorrent"
-        logo: "assets/qbittorrent.png"
-        subtitle: "qbittorrent.vm"
-        tag:  "Services"
-        url:  "https://qbt.drak3.io/"
-
-      - name: "Syncthing"
-        logo: "assets/syncthing.png"
-        subtitle: "syncthing.vm"
-        tag:  "Services"
-        url:  "https://sync.drak3.io/syncthing/"
-
-      - name: "Gitea"
-        logo: "assets/Gitea_Logo.svg"
-        subtitle: "Gitea"
-        tag:  "Services"
-        url:  "https://git.drak3.io/"
-
-      - name: "Minio"
-        logo: "assets/minio.jpg"
-        subtitle: "Minio"
-        tag:  "Services"
-        url:  "https://s3.drak3.io/"
+  - name: "Package Management"
+    icon: "fas fa-server"
+    items:
 
       - name: "Apt Cache NG"
         icon: "fas fa-cubes"
@@ -197,15 +220,15 @@ services:
         tag:  "pihole"
         url:  "https://pihole2.drak3.io/admin/index.php"
 
-      - name: "Pi-Hole (docker)"
-        logo: "assets/Pi-hole_vector_logo.svg.png"
-        subtitle: "tbd.drak3.io"
-        tag:  "pihole"
-        url:  "https://duckduckgo.com"
-
   - name: "Applications"
     icon: "fas fa-user"
     items:
+
+      - name: "qBittorrent"
+        logo: "assets/qbittorrent.png"
+        subtitle: "qbittorrent.vm"
+        tag:  "Services"
+        url:  "https://qbt.drak3.io/"
 
       - name: "NextCloud"
         logo: "assets/Nextcloud_Logo.svg"
@@ -280,5 +303,11 @@ services:
       - name: "Jenkins"
         icon: "fab fa-github"
         subtitle: "Jenkins Git Repo"
+        tag:  "GitHub"
+        url:  "https://github.com/educatedCaveman/Jenkins"
+    
+      - name: "Documentation"
+        icon: "fab fa-github"
+        subtitle: "Documentation Git Repo"
         tag:  "GitHub"
         url:  "https://github.com/educatedCaveman/Jenkins"
