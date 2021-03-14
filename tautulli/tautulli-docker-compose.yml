@@ -1,0 +1,21 @@
+---
+version: "3.8"
+services:
+  tautulli:
+    image: ghcr.io/linuxserver/tautulli
+    container_name: tautulli
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - /mnt/gluster/tautulli/config:/config
+    ports:
+      - 8181:8181
+    restart:  unless-stopped
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints: [node.role == worker]
