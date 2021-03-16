@@ -78,9 +78,9 @@ services:
         logo: "assets/guacamole-logo.png"
         url:  "https://guac.drak3.io"
 
-      - name: "Guacamole (DEV)"
-        logo: "assets/guacamole-logo.png"
-        url:  "https://guac.dev.drak3.io"
+      # - name: "Guacamole (DEV)"
+      #   logo: "assets/guacamole-logo.png"
+      #   url:  "https://guac.dev.drak3.io"
 
       - name: "Mobius (iDRAC)"
         icon: "fas fa-server"
@@ -135,21 +135,21 @@ services:
         icon: "fab fa-youtube"
         url:  "https://ytdl.drak3.io"
 
-      - name: "HandBrake"
-        logo: "assets/HandBrake_Icon.png"
-        url:  "https://hb.dev.drak3.io"
+      # - name: "HandBrake"
+      #   logo: "assets/HandBrake_Icon.png"
+      #   url:  "https://hb.dev.drak3.io"
 
-      - name: "YouTube DL (DEV)"
-        icon: "fab fa-youtube"
-        url:  "https://ytdl.dev.drak3.io"
+      # - name: "YouTube DL (DEV)"
+      #   icon: "fab fa-youtube"
+      #   url:  "https://ytdl.dev.drak3.io"
 
-      - name: "Ombi"
-        logo: "assets/ombi_icon.png"
-        url:  "https://ombi.dev.drak3.io"
+      # - name: "Ombi"
+      #   logo: "assets/ombi_icon.png"
+      #   url:  "https://ombi.dev.drak3.io"
 
-      - name: "Tautulli"
-        logo: "assets/tautulli.png"
-        url:  "https://tau.dev.drak3.io/"
+      # - name: "Tautulli"
+      #   logo: "assets/tautulli.png"
+      #   url:  "https://tau.dev.drak3.io/"
 
 
   - name: "Data Services"
@@ -180,17 +180,17 @@ services:
         icon: "fas fa-code"
         url:  "https://code.drak3.io"
 
-      - name: "VS Code (DEV)"
-        icon: "fas fa-code"
-        url:  "https://code.dev.drak3.io"
+      # - name: "VS Code (DEV)"
+      #   icon: "fas fa-code"
+      #   url:  "https://code.dev.drak3.io"
 
       - name: "Portainer"
         logo: "assets/docker.png"
         url:  "https://portainer.drak3.io/"
 
-      - name: "Portainer (DEV)"
-        logo: "assets/docker.png"
-        url:  "https://portainer.dev.drak3.io/"
+      # - name: "Portainer (DEV)"
+      #   logo: "assets/docker.png"
+      #   url:  "https://portainer.dev.drak3.io/"
 
   - name: "Admin Tools"
     icon: "fas fa-server"
@@ -239,3 +239,52 @@ services:
       - name: "Documentation"
         icon: "fab fa-github"
         url:  "https://github.com/educatedCaveman/Jenkins"
+
+
+  - name: "DEV"
+    icon: "fas fa-server"
+    items:
+
+      - name: "Servers"
+        icon: "fas fa-server"
+        items:
+
+          - name: "Guacamole (DEV)"
+            logo: "assets/guacamole-logo.png"
+            url:  "https://guac.dev.drak3.io"
+
+      - name: "Media Services"
+        icon: "fas fa-server"
+        items:
+
+          - name: "HandBrake"
+            logo: "assets/HandBrake_Icon.png"
+            url:  "https://hb.dev.drak3.io"
+
+          - name: "YouTube DL (DEV)"
+            icon: "fab fa-youtube"
+            url:  "https://ytdl.dev.drak3.io"
+
+          - name: "Ombi"
+            logo: "assets/ombi_icon.png"
+            url:  "https://ombi.dev.drak3.io"
+
+          - name: "Tautulli"
+            logo: "assets/tautulli.png"
+            url:  "https://tau.dev.drak3.io/"
+
+      - name: "Development Tools"
+        icon: "fas fa-server"
+        items:
+
+          - name: "VS Code (DEV)"
+            icon: "fas fa-code"
+            url:  "https://code.dev.drak3.io"
+
+          - name: "Portainer (DEV)"
+            logo: "assets/docker.png"
+            url:  "https://portainer.dev.drak3.io/"
+
+
+
+        
