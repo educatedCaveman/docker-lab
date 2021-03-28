@@ -214,12 +214,116 @@ services:
         url:  "https://github.com/educatedCaveman/Jenkins"
 
   - name: "Netdata"
-    icon: "fab fa-tachometer"
+    icon: "fas fa-tachometer"
     items:
     
       - name: "Tesseract"
         logo: "assets/netdata_pve.svg"
         url:  "https://tesseract.srv:19999"
+    
+      - name: "Nextcloud"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://nextcloud.vm:19999"
+    
+      - name: "Moria"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://moria.vm:19999"
+    
+      - name: "GitLab"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://gitlab.vm:19999"
+    
+      - name: "APT Mirror"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://apt-mirror.vm:19999"
+    
+      - name: "APT Cache"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://apt-cache.vm:19999"
+    
+      - name: "Plex"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://plex.vm:19999"
+    
+      - name: "Singularity"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://singularity.vm:19999"
+    
+      - name: "Jenkins"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://jenkins.lab:19999"
+    
+      - name: "Swarm API LB (PRD)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://swarm-api-lb.vm:19999"
+    
+      - name: "Swarm Manager 1 (PRD)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://sevastopol-manager-01.vm:19999"
+    
+      - name: "Swarm Manager 2 (PRD)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://sevastopol-manager-02.vm:19999"
+    
+      - name: "Swarm Manager 3 (PRD)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://sevastopol-manager-03.vm:19999"
+    
+      - name: "Swarm Worker 1 (PRD)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://sevastopol-worker-01.vm:19999"
+    
+      - name: "Swarm Worker 2 (PRD)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://sevastopol-worker-02.vm:19999"
+    
+      - name: "Swarm Worker 3 (PRD)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://sevastopol-worker-03.vm:19999"
+    
+      - name: "Swarm Worker 4 (PRD)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://sevastopol-worker-04.vm:19999"
+    
+      - name: "Swarm API LB (DEV)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://swarm-api-lb.lab:19999"
+    
+      - name: "Swarm Manager 1 (DEV)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://lv426-manager-01.lab:19999"
+    
+      - name: "Swarm Manager 2 (DEV)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://lv426-manager-02.lab:19999"
+    
+      - name: "Swarm Manager 3 (DEV)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://lv426-manager-03.lab:19999"
+    
+      - name: "Swarm Worker 1 (DEV)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://lv426-worker-01.lab:19999"
+    
+      - name: "Swarm Worker 2 (DEV)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://lv426-worker-02.lab:19999"
+    
+      - name: "Swarm Worker 3 (DEV)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://lv426-worker-03.lab:19999"
+    
+      - name: "Swarm Worker 4 (DEV)"
+        logo: "assets/netdata_logo.svg"
+        url:  "https://lv426-worker-04.lab:19999"
+    
+      - name: "Event Horizon"
+        logo: "assets/netdata_pve.svg"
+        url:  "https://event-horizon.srv:19999"
+    
+      - name: "Dilithium"
+        logo: "assets/netdata_pve.svg"
+        url:  "https://dilithium.srv:19999"
 
 
   - name: "DEV"
