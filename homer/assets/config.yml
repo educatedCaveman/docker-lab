@@ -12,7 +12,9 @@ logo: "assets/icons/icon-maskable.png"
 header: true # Set to false to hide the header
 footer: false # set false if you want to hide it.
 
-columns: "auto" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+# TODO: try setting this to 4
+# columns: "auto" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+columns: 4
 connectivityCheck: true # whether you want to display a message when the apps are not accessible anymore (VPN disconnected for example)
 
 # Optional theming
@@ -78,10 +80,6 @@ services:
         logo: "assets/guacamole-logo.png"
         url:  "https://guac.drak3.io"
 
-      # - name: "Guacamole (DEV)"
-      #   logo: "assets/guacamole-logo.png"
-      #   url:  "https://guac.dev.drak3.io"
-
       - name: "Mobius (iDRAC)"
         icon: "fas fa-server"
         url:  "https://idrac.mobius.drak3.io"
@@ -135,23 +133,6 @@ services:
         icon: "fab fa-youtube"
         url:  "https://ytdl.drak3.io"
 
-      # - name: "HandBrake"
-      #   logo: "assets/HandBrake_Icon.png"
-      #   url:  "https://hb.dev.drak3.io"
-
-      # - name: "YouTube DL (DEV)"
-      #   icon: "fab fa-youtube"
-      #   url:  "https://ytdl.dev.drak3.io"
-
-      # - name: "Ombi"
-      #   logo: "assets/ombi_icon.png"
-      #   url:  "https://ombi.dev.drak3.io"
-
-      # - name: "Tautulli"
-      #   logo: "assets/tautulli.png"
-      #   url:  "https://tau.dev.drak3.io/"
-
-
   - name: "Data Services"
     icon: "fas fa-server"
     items:
@@ -180,17 +161,9 @@ services:
         icon: "fas fa-code"
         url:  "https://code.drak3.io"
 
-      # - name: "VS Code (DEV)"
-      #   icon: "fas fa-code"
-      #   url:  "https://code.dev.drak3.io"
-
       - name: "Portainer"
         logo: "assets/docker.png"
         url:  "https://portainer.drak3.io/"
-
-      # - name: "Portainer (DEV)"
-      #   logo: "assets/docker.png"
-      #   url:  "https://portainer.dev.drak3.io/"
 
   - name: "Admin Tools"
     icon: "fas fa-server"
