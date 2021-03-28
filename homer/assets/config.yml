@@ -65,15 +65,15 @@ services:
     icon: "fas fa-server"
     items:
       - name: "Mobius"
-        icon: "fas fa-server"
+        logo: "assets/TrueNAS-Core.png"
         url:  "https://mobius.drak3.io"
 
       - name: "Tesseract"
-        icon: "fas fa-server"
+        logo: "assets/Proxmox-logo.png"
         url:  "https://tesseract.drak3.io"
 
       - name: "Unifi Controller"
-        icon: "fas fa-server"
+        logo: "assets/unifi_logo.png"
         url:  "https://unifi.drak3.io"
 
       - name: "Guacamole"
@@ -81,11 +81,11 @@ services:
         url:  "https://guac.drak3.io"
 
       - name: "Mobius (iDRAC)"
-        icon: "fas fa-server"
+        logo: "assets/dell_logo.png"
         url:  "https://idrac.mobius.drak3.io"
 
       - name: "Tesseract (iDRAC)"
-        icon: "fas fa-server"
+        logo: "assets/dell_logo.png"
         url:  "https://idrac.tesseract.drak3.io"
 
       - name: "pfSense (IPMI)"
@@ -212,6 +212,14 @@ services:
       - name: "Documentation"
         icon: "fab fa-github"
         url:  "https://github.com/educatedCaveman/Jenkins"
+
+  - name: "Netdata"
+    icon: "fab fa-tachometer"
+    items:
+    
+      - name: "Tesseract"
+        logo: "assets/netdata_pve.svg"
+        url:  "https://tesseract.srv:19999"
 
 
   - name: "DEV"
