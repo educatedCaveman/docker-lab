@@ -325,7 +325,6 @@ services:
         logo: "assets/netdata_pve.svg"
         url:  "https://dilithium.srv:19999"
 
-
   - name: "DEV"
     icon: "fas fa-server"
     items:
@@ -357,7 +356,4 @@ services:
       - name: "Portainer (DEV)"
         logo: "assets/docker.png"
         url:  "https://portainer.dev.drak3.io/"
-
-
-
         
