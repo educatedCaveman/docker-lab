@@ -12,6 +12,7 @@ services:
      - WATCHTOWER_CLEANUP=true
      - WATCHTOWER_ROLLING_RESTART=true
      - WATCHTOWER_NOTIFICATION_SLACK_HOOK_URL=/run/secrets/SLACK_WEBHOOK_WATCHTOWER
+     - WATCHTOWER_POLL_INTERVAL=3600
      - TZ=America/New_York
     restart: unless-stopped
     network_mode: "bridge"
