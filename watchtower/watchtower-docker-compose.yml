@@ -6,12 +6,12 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-     - WATCHTOWER_NOTIFICATIONS=slack
-     - WATCHTOWER_NOTIFICATIONS_LEVEL=warn
-     - WATCHTOWER_NOTIFICATION_SLACK_CHANNEL=#notifications
+    #  - WATCHTOWER_NOTIFICATIONS=slack
+    #  - WATCHTOWER_NOTIFICATIONS_LEVEL=info
+    #  - WATCHTOWER_NOTIFICATION_SLACK_CHANNEL=#notifications
      - WATCHTOWER_CLEANUP=true
      - WATCHTOWER_ROLLING_RESTART=true
-     - WATCHTOWER_NOTIFICATION_SLACK_HOOK_URL=/run/secrets/SLACK_WEBHOOK_WATCHTOWER
+    #  - WATCHTOWER_NOTIFICATION_SLACK_HOOK_URL=/run/secrets/SLACK_WEBHOOK_WATCHTOWER
      - WATCHTOWER_POLL_INTERVAL=3600
      - TZ=America/New_York
     restart: unless-stopped
