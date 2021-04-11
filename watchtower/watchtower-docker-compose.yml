@@ -7,7 +7,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
      - WATCHTOWER_NOTIFICATIONS=slack
-     - WATCHTOWER_NOTIFICATIONS_LEVEL=info
+     - WATCHTOWER_NOTIFICATIONS_LEVEL=warn
      - WATCHTOWER_NOTIFICATION_SLACK_CHANNEL=#notifications
      - WATCHTOWER_CLEANUP=true
      - WATCHTOWER_ROLLING_RESTART=true
