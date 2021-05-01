@@ -10,6 +10,10 @@ pipeline {
         LOCAL_REPO_PRD = '/var/lib/jenkins/workspace/docker_master'
     }
 
+    //triggering periodically so the code is always present
+    // run every friday at 3AM
+    triggers { cron('0 3 * * 5') }
+
     stages {
         // tear down the changed DEV stacks
         stage('destroy dev stacks') {
