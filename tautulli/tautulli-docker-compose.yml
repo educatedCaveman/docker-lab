@@ -1,4 +1,5 @@
 ---
+# this comment is a hack
 version: "3.8"
 services:
   tautulli:
