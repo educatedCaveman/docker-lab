@@ -158,7 +158,6 @@ services:
 
       - name: "Graylog"
         logo: "assets/graylog-icon.svg"
-        # url:  "https://logs.drak3.io/"
         url:  "http://graylog.vm:9000"
 
   - name: "Development Tools"
