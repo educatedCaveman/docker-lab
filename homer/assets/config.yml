@@ -153,6 +153,11 @@ services:
         logo: "assets/grafana.png"
         url:  "https://grafana.drak3.io/"
 
+      - name: "Graylog"
+        logo: "assets/graylog-icon.svg"
+        # url:  "https://logs.drak3.io/"
+        url:  "http://graylog.vm:9000"
+
   - name: "Development Tools"
     icon: "fas fa-server"
     items:
