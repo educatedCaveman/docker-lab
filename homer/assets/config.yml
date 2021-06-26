@@ -145,7 +145,7 @@ services:
         logo: "assets/minio.jpg"
         url:  "https://s3.drak3.io/"
 
-      - name: "InfluxDB / Chronograf"
+      - name: "InfluxDB"
         logo: "assets/influxdata-logo.svg"
         url:  "https://influx.drak3.io/"
 
