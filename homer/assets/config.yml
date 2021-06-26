@@ -92,6 +92,9 @@ services:
         icon: "fas fa-server"
         url:  "http://192.168.1.10"
 
+      - name: "OctoPrint"
+        logo: "assets/octoprint.png"
+        url:  "https://octopi.drak3.io"
 
   - name: "Media Services"
     icon: "fas fa-server"
