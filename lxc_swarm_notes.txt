@@ -1,0 +1,40 @@
+need to install fuse-overlayfs?
+and don't add a daemon.json
+use this guide?: https://gist.github.com/kuanghan/9aa5dfea243ed109c0878267e2d80b13
+
+
+resources:
+
+managers (DEV/PRD):
+	- CPU:	4
+	- MEM:	2G
+	- Disk:	8G
+	- Gluster:	16G/32G
+	- MACs:
+		- EA:08:D3:D2:04:6B		13.51
+		- AE:B4:78:E5:89:D9		13.52
+		- DE:BE:2C:0E:36:8D		13.53
+workers:
+	- CPU:	8/16	(maybe lessen this?)
+	- MEM:	8G/16G	(maybe lessen this?)
+	- Disk:	8G
+	- Gluster:	32G/64G
+	- MACs:
+		- B2:89:BE:60:2B:E5		13.61
+		- 02:35:AE:AC:BB:39		13.62
+		- D2:79:41:75:DC:DC		13.63
+		- 72:4E:E5:DA:D6:00		13.64
+	
+LXC creation notes:
+	- edit the config with the following options:
+		
+			lxc.apparmor.profile = unconfined
+			lxc.cgroup.devices.allow = a
+			lxc.cap.drop =
+			
+	- must be a privileged container
+	- must allow nesting
+	- must allow FUSE
+	- volume for gluster mounted at: /gluster/bricks/1
+		- only backup the first one
+		- skip replication on them all

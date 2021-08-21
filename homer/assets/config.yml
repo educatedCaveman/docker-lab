@@ -75,6 +75,10 @@ services:
         logo: "assets/unifi_logo.png"
         url:  "https://unifi.drak3.io"
 
+      - name: "Unifi Protect"
+        logo: "assets/unifi_logo.png"
+        url:  "https://nvr.drak3.io"
+
       - name: "Guacamole"
         logo: "assets/guacamole-logo.png"
         url:  "https://guac.drak3.io"
@@ -158,6 +162,10 @@ services:
       - name: "Graylog"
         logo: "assets/graylog-icon.svg"
         url:  "http://graylog.vm:9000"
+
+      - name: "Unifi Protect (feeds)"
+        logo: "assets/unifi_logo.png"
+        url:  "http://192.168.200.2"
 
   - name: "Development Tools"
     icon: "fas fa-server"
