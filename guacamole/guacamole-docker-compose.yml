@@ -6,8 +6,8 @@ services:
     image: oznu/guacamole
     container_name: guacamole
     volumes:
-      - /mnt/gluster/guacamole/config:/config
-      - /mnt/gluster/guacamole/etc_guacamole:/etc/guacamole
+      - /docker/docker-lab/guacamole/config:/config
+      - /docker/docker-lab/guacamole/etc_guacamole:/etc/guacamole
     ports:
       - 8081:8080
     restart:  unless-stopped

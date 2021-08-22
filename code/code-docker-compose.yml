@@ -12,16 +12,10 @@ services:
       - PASSWORD=Uid5N5iAGloDFoAzsZZE5UGGcXtDhT5r1Tcm7YgC
       - SUDO_PASSWORD=Uid5N5iAGloDFoAzsZZE5UGGcXtDhT5r1Tcm7YgC
     volumes:
-      - /mnt/gluster/code/config:/config:Z
+      - /docker/docker-lab/code/config:/config:Z
     ports:
       - 9443:8443
     restart: unless-stopped
     deploy:
-      mode: global
-      update_config:
-        parallelism: 1
-        delay: 10s
       restart_policy:
         condition: on-failure
-      placement:
-        constraints: [node.role == worker]

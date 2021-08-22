@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /mnt/gluster/tautulli/config:/config
+      - /docker/docker-lab/tautulli/config:/config
     ports:
       - 8181:8181
     restart:  unless-stopped

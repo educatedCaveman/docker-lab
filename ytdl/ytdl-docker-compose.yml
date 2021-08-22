@@ -7,10 +7,10 @@ services:
       ALLOW_CONFIG_MUTATIONS: "true"
     restart: always
     volumes:
-      - /mnt/gluster/ytdl/appdata:/app/appdata
-      - /mnt/gluster/ytdl/audio:/app/audio
-      - /mnt/gluster/ytdl/video:/app/video
-      - /mnt/gluster/ytdl/subscriptions:/app/subscriptions
+      - /docker/docker-lab/ytdl/appdata:/app/appdata
+      - /docker/docker-lab/ytdl/audio:/app/audio
+      - /docker/docker-lab/ytdl/video:/app/video
+      - /docker/docker-lab/ytdl/subscriptions:/app/subscriptions
     ports:
       - "8998:17442"
     image: tzahi12345/youtubedl-material:latest

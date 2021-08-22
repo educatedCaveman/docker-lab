@@ -7,10 +7,10 @@ services:
     ports:
       - "5800:5800"
     volumes:
-      - /mnt/gluster/handbrake:/config:rw
-      - /mnt/gluster/handbrake/storage:/storage:ro
-      - /mnt/gluster/handbrake/watch:/watch:rw
-      - /mnt/gluster/handbrake/output:/output:rw
+      - /docker/docker-lab/handbrake:/config:rw
+      - /docker/docker-lab/handbrake/storage:/storage:ro
+      - /docker/docker-lab/handbrake/watch:/watch:rw
+      - /docker/docker-lab/handbrake/output:/output:rw
     restart: unless-stopped
     deploy:
       mode: global
