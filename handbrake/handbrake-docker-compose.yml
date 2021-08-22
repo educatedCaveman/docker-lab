@@ -13,11 +13,5 @@ services:
       - /docker/docker-lab/handbrake/output:/output:rw
     restart: unless-stopped
     deploy:
-      mode: global
-      update_config:
-        parallelism: 1
-        delay: 10s
       restart_policy:
         condition: on-failure
-      placement:
-        constraints: [node.role == worker]

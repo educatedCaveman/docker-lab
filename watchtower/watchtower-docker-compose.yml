@@ -19,10 +19,6 @@ services:
     restart: unless-stopped
     network_mode: "bridge"
     deploy:
-      mode: global
-      update_config:
-        parallelism: 1
-        delay: 10s
       restart_policy:
         condition: on-failure
     secrets:

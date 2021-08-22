@@ -8,12 +8,6 @@ services:
       - 5201:5201
     restart: unless-stopped
     deploy:
-      replicas: 1
-      update_config:
-        parallelism: 1
-        delay: 10s
       restart_policy:
         condition: on-failure
-      placement:
-        constraints: [node.role == worker]
     network_mode: "bridge"
