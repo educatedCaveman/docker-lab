@@ -1,0 +1,20 @@
+---
+# this comment is a hack
+version: '3'
+services:
+  homer:
+    image: homeassistant/home-assistant
+    container_name: home-assistant
+    volumes:
+      - /docker/docker-lab/home-assistant/config:/config
+    ports:
+      - 8123:8123
+    environment:
+     - UID=1000
+     - GID=1000
+     - TZ=America/New_York
+    restart: unless-stopped
+    network_mode: "host"
+    deploy:
+      restart_policy:
+        condition: on-failure
