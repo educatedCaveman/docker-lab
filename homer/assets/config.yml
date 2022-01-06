@@ -147,13 +147,13 @@ services:
         logo: "assets/qbittorrent.png"
         url:  "https://qbt.drak3.io/"
 
-      - name: "Sonarr (TV)"
-        logo: "assets/sonarr.png"
-        url:  "https://sonarr.drak3.io"
-
       - name: "Radarr (Movies)"
         logo: "assets/radarr.png"
         url:  "https://radarr.drak3.io"
+
+      - name: "Sonarr (TV)"
+        logo: "assets/sonarr.png"
+        url:  "https://sonarr.drak3.io"
 
       - name: "Lidarr (Music)"
         logo: "assets/lidarr.png"
@@ -161,7 +161,7 @@ services:
 
       - name: "Jackett"
         icon: "fas fa-tshirt"
-        url:  "https://sonarr.drak3.io"
+        url:  "https://jackett.drak3.io"
 
   - name: "Data Services"
     icon: "fas fa-server"
