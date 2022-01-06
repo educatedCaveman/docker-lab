@@ -139,6 +139,30 @@ services:
         icon: "fab fa-youtube"
         url:  "https://ytdl.drak3.io"
 
+  - name: "Torrent Services"
+    icon: "fas fa-share-alt"
+    items:
+
+      - name: "qBittorrent"
+        logo: "assets/qbittorrent.png"
+        url:  "https://qbt.drak3.io/"
+
+      - name: "Sonarr (TV)"
+        logo: "assets/sonarr.png"
+        url:  "https://sonarr.drak3.io"
+
+      - name: "Radarr (Movies)"
+        logo: "assets/radarr.png"
+        url:  "https://radarr.drak3.io"
+
+      - name: "Lidarr (Music)"
+        logo: "assets/lidarr.png"
+        url:  "https://lidarr.drak3.io"
+
+      - name: "Jackett"
+        icon: "fas fa-tshirt"
+        url:  "https://sonarr.drak3.io"
+
   - name: "Data Services"
     icon: "fas fa-server"
     items:
