@@ -119,14 +119,6 @@ services:
         logo: "assets/Nextcloud_Logo.svg"
         url:  "https://cloud.drak3.io"
 
-      - name: "Whoogle"
-        icon: "fab fa-google"
-        url:  "https://google.drak3.io"
-
-      - name: "MineOS"
-        logo: "assets/minecraft.png"
-        url:  "https://mineos.drak3.io"
-
       - name: "qBittorrent"
         logo: "assets/qbittorrent.png"
         url:  "https://qbt.drak3.io/"
@@ -146,22 +138,27 @@ services:
       - name: "qBittorrent"
         logo: "assets/qbittorrent.png"
         url:  "https://qbt.drak3.io/"
+        target: "_blank"
 
       - name: "Radarr (Movies)"
         logo: "assets/radarr.png"
         url:  "https://radarr.drak3.io"
+        target: "_blank"
 
       - name: "Sonarr (TV)"
         logo: "assets/sonarr.png"
         url:  "https://sonarr.drak3.io"
+        target: "_blank"
 
       - name: "Lidarr (Music)"
         logo: "assets/lidarr.png"
         url:  "https://lidarr.drak3.io"
+        target: "_blank"
 
       - name: "Jackett"
         icon: "fas fa-tshirt"
         url:  "https://jackett.drak3.io"
+        target: "_blank"
 
   - name: "Data Services"
     icon: "fas fa-server"
@@ -183,13 +180,9 @@ services:
         logo: "assets/grafana.png"
         url:  "https://grafana.drak3.io/"
 
-      - name: "Graylog"
-        logo: "assets/graylog-icon.svg"
-        url:  "http://graylog.vm:9000"
-
       - name: "Unifi Protect (feeds)"
         logo: "assets/unifi_logo.png"
-        url:  "http://192.168.200.2"
+        url:  "https://nvr.drak3.io"
 
   - name: "Development Tools"
     icon: "fas fa-server"
@@ -258,6 +251,38 @@ services:
       - name: "Documentation"
         icon: "fab fa-github"
         url:  "https://github.com/educatedCaveman/Jenkins"
+
+  - name: "DEV"
+    icon: "fas fa-server"
+    items:
+
+      - name: "Guacamole (DEV)"
+        logo: "assets/guacamole-logo.png"
+        url:  "https://guac.dev.drak3.io"
+
+      - name: "HandBrake"
+        logo: "assets/HandBrake_Icon.png"
+        url:  "https://hb.dev.drak3.io"
+
+      - name: "YouTube DL (DEV)"
+        icon: "fab fa-youtube"
+        url:  "https://ytdl.dev.drak3.io"
+
+      - name: "Ombi"
+        logo: "assets/ombi_icon.png"
+        url:  "https://ombi.dev.drak3.io"
+
+      - name: "Tautulli"
+        logo: "assets/tautulli.png"
+        url:  "https://tau.dev.drak3.io/"
+
+      - name: "VS Code (DEV)"
+        icon: "fas fa-code"
+        url:  "https://code.dev.drak3.io"
+
+      - name: "Portainer (DEV)"
+        logo: "assets/docker.png"
+        url:  "https://portainer.dev.drak3.io/"
 
   - name: "Netdata"
     icon: "fas fa-tachometer"
@@ -371,35 +396,4 @@ services:
         logo: "assets/netdata_pve.svg"
         url:  "https://dilithium.srv:19999"
 
-  - name: "DEV"
-    icon: "fas fa-server"
-    items:
-
-      - name: "Guacamole (DEV)"
-        logo: "assets/guacamole-logo.png"
-        url:  "https://guac.dev.drak3.io"
-
-      - name: "HandBrake"
-        logo: "assets/HandBrake_Icon.png"
-        url:  "https://hb.dev.drak3.io"
-
-      - name: "YouTube DL (DEV)"
-        icon: "fab fa-youtube"
-        url:  "https://ytdl.dev.drak3.io"
-
-      - name: "Ombi"
-        logo: "assets/ombi_icon.png"
-        url:  "https://ombi.dev.drak3.io"
-
-      - name: "Tautulli"
-        logo: "assets/tautulli.png"
-        url:  "https://tau.dev.drak3.io/"
-
-      - name: "VS Code (DEV)"
-        icon: "fas fa-code"
-        url:  "https://code.dev.drak3.io"
-
-      - name: "Portainer (DEV)"
-        logo: "assets/docker.png"
-        url:  "https://portainer.dev.drak3.io/"
         
