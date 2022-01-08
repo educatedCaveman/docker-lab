@@ -144,7 +144,7 @@ services:
         target: "_blank"
 
       - name: "YouTube DL"
-        icon: "assets/youtubedl.png"
+        logo: "assets/youtubedl.png"
         url:  "https://ytdl.drak3.io"
         target: "_blank"
 
@@ -173,7 +173,7 @@ services:
         target: "_blank"
 
       - name: "Jackett"
-        icon: "assets/jackett.png"
+        logo: "assets/jackett.png"
         url:  "https://jackett.drak3.io"
         target: "_blank"
 
@@ -221,7 +221,7 @@ services:
         target: "_blank"
 
       - name: "VS Code"
-        icon: "assets/vscode.svg"
+        logo: "assets/vscode.svg"
         url:  "https://code.drak3.io"
         target: "_blank"
 
@@ -259,32 +259,32 @@ services:
     items:
     
       - name: "Scripts"
-        icon: "assets/github.png"
+        logo: "assets/vscode.svg"
         url:  "https://github.com/educatedCaveman/scripts"
         target: "_blank"
     
       - name: "Dotfiles"
-        icon: "assets/github.png"
+        logo: "assets/vscode.svg"
         url:  "https://github.com/educatedCaveman/dotfiles"
         target: "_blank"
     
       - name: "Ansible"
-        icon: "assets/github.png"
+        logo: "assets/vscode.svg"
         url:  "https://github.com/educatedCaveman/ansible"
         target: "_blank"
     
       - name: "Docker"
-        icon: "assets/github.png"
+        logo: "assets/vscode.svg"
         url:  "https://github.com/educatedCaveman/docker-lab"
         target: "_blank"
     
       - name: "Jenkins"
-        icon: "assets/github.png"
+        logo: "assets/vscode.svg"
         url:  "https://github.com/educatedCaveman/Jenkins"
         target: "_blank"
     
       - name: "Documentation"
-        icon: "assets/github.png"
+        logo: "assets/vscode.svg"
         url:  "https://github.com/educatedCaveman/Jenkins"
         target: "_blank"
 
@@ -303,7 +303,7 @@ services:
         target: "_blank"
 
       - name: "YouTube DL (DEV)"
-        icon: "assets/youtubedl.png"
+        logo: "assets/youtubedl.png"
         url:  "https://ytdl.dev.drak3.io"
         target: "_blank"
 
@@ -318,7 +318,7 @@ services:
         target: "_blank"
 
       - name: "VS Code (DEV)"
-        icon: "assets/vscode.svg"
+        logo: "assets/vscode.svg"
         url:  "https://code.dev.drak3.io"
         target: "_blank"
 
@@ -376,84 +376,14 @@ services:
         url:  "https://jenkins.lab:19999"
         target: "_blank"
     
-      - name: "Swarm API LB (PRD)"
+      - name: "Sevastopol"
         logo: "assets/netdata.png"
-        url:  "https://swarm-api-lb.vm:19999"
+        url:  "https://sevastopol.vm:19999"
         target: "_blank"
     
-      - name: "Swarm Manager 1 (PRD)"
+      - name: "LV-426"
         logo: "assets/netdata.png"
-        url:  "https://sevastopol-manager-01.vm:19999"
-        target: "_blank"
-    
-      - name: "Swarm Manager 2 (PRD)"
-        logo: "assets/netdata.png"
-        url:  "https://sevastopol-manager-02.vm:19999"
-        target: "_blank"
-    
-      - name: "Swarm Manager 3 (PRD)"
-        logo: "assets/netdata.png"
-        url:  "https://sevastopol-manager-03.vm:19999"
-        target: "_blank"
-    
-      - name: "Swarm Worker 1 (PRD)"
-        logo: "assets/netdata.png"
-        url:  "https://sevastopol-worker-01.vm:19999"
-        target: "_blank"
-    
-      - name: "Swarm Worker 2 (PRD)"
-        logo: "assets/netdata.png"
-        url:  "https://sevastopol-worker-02.vm:19999"
-        target: "_blank"
-    
-      - name: "Swarm Worker 3 (PRD)"
-        logo: "assets/netdata.png"
-        url:  "https://sevastopol-worker-03.vm:19999"
-        target: "_blank"
-    
-      - name: "Swarm Worker 4 (PRD)"
-        logo: "assets/netdata.png"
-        url:  "https://sevastopol-worker-04.vm:19999"
-        target: "_blank"
-    
-      - name: "Swarm API LB (DEV)"
-        logo: "assets/netdata.png"
-        url:  "https://swarm-api-lb.lab:19999"
-        target: "_blank"
-    
-      - name: "Swarm Manager 1 (DEV)"
-        logo: "assets/netdata.png"
-        url:  "https://lv426-manager-01.lab:19999"
-        target: "_blank"
-    
-      - name: "Swarm Manager 2 (DEV)"
-        logo: "assets/netdata.png"
-        url:  "https://lv426-manager-02.lab:19999"
-        target: "_blank"
-    
-      - name: "Swarm Manager 3 (DEV)"
-        logo: "assets/netdata.png"
-        url:  "https://lv426-manager-03.lab:19999"
-        target: "_blank"
-    
-      - name: "Swarm Worker 1 (DEV)"
-        logo: "assets/netdata.png"
-        url:  "https://lv426-worker-01.lab:19999"
-        target: "_blank"
-    
-      - name: "Swarm Worker 2 (DEV)"
-        logo: "assets/netdata.png"
-        url:  "https://lv426-worker-02.lab:19999"
-        target: "_blank"
-    
-      - name: "Swarm Worker 3 (DEV)"
-        logo: "assets/netdata.png"
-        url:  "https://lv426-worker-03.lab:19999"
-        target: "_blank"
-    
-      - name: "Swarm Worker 4 (DEV)"
-        logo: "assets/netdata.png"
-        url:  "https://lv426-worker-04.lab:19999"
+        url:  "https://lv-426.lab:19999"
         target: "_blank"
     
       - name: "Event Horizon"
