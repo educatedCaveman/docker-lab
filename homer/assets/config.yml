@@ -65,38 +65,37 @@ services:
     icon: "fas fa-server"
     items:
       - name: "Mobius"
-        logo: "https://github.com/walkxcode/dashboard-icons/blob/master/png/truenas.png?raw=true"
+        logo: "assets/truenas.png"
         url:  "https://mobius.drak3.io"
-        target: "_blank"
-        
+        target: "_blank"        
 
       - name: "Tesseract"
-        logo: "assets/Proxmox-logo.png"
+        logo: "assets/proxmox.png"
         url:  "https://tesseract.drak3.io"
         target: "_blank"
 
       - name: "Unifi Controller"
-        logo: "assets/unifi_logo.png"
+        logo: "assets/unifi-controller.png"
         url:  "https://unifi.drak3.io"
         target: "_blank"
 
       - name: "Unifi Protect"
-        logo: "assets/unifi_logo.png"
+        logo: "assets/unifi.png"
         url:  "https://nvr.drak3.io"
         target: "_blank"
 
       - name: "Guacamole"
-        logo: "assets/guacamole-logo.png"
+        logo: "assets/guacamole.png"
         url:  "https://guac.drak3.io"
         target: "_blank"
 
       - name: "Mobius (iDRAC)"
-        logo: "assets/dell_logo.png"
+        logo: "assets/idrac.png"
         url:  "https://idrac.mobius.drak3.io"
         target: "_blank"
 
       - name: "Tesseract (iDRAC)"
-        logo: "assets/dell_logo.png"
+        logo: "assets/idrac.png"
         url:  "https://idrac.tesseract.drak3.io"
         target: "_blank"
 
@@ -115,12 +114,12 @@ services:
     items:
 
       - name: "Plex"
-        logo: "assets/plex.svg"
+        logo: "assets/plex.png"
         url:  "https://plex.drak3.io"
         target: "_blank"
 
       - name: "Ombi"
-        logo: "assets/ombi_icon.png"
+        logo: "assets/ombi.png"
         url:  "https://ombi.drak3.io"
         target: "_blank"
 
@@ -130,22 +129,22 @@ services:
         target: "_blank"
 
       - name: "NextCloud"
-        logo: "assets/Nextcloud_Logo.svg"
+        logo: "assets/nextcloud.png"
         url:  "https://cloud.drak3.io"
         target: "_blank"
 
       - name: "qBittorrent"
-        logo: "assets/qbittorrent.png"
+        logo: "assets/qbittorrent.svg"
         url:  "https://qbt.drak3.io/"
         target: "_blank"
 
       - name: "HandBrake"
-        logo: "assets/HandBrake_Icon.png"
+        logo: "assets/handbrake.png"
         url:  "https://hb.drak3.io"
         target: "_blank"
 
       - name: "YouTube DL"
-        icon: "fab fa-youtube"
+        icon: "assets/youtubedl.png"
         url:  "https://ytdl.drak3.io"
         target: "_blank"
 
@@ -154,7 +153,7 @@ services:
     items:
 
       - name: "qBittorrent"
-        logo: "assets/qbittorrent.png"
+        logo: "assets/qbittorrent.svg"
         url:  "https://qbt.drak3.io/"
         target: "_blank"
 
@@ -164,7 +163,7 @@ services:
         target: "_blank"
 
       - name: "Sonarr (TV)"
-        logo: "assets/sonarr.png"
+        logo: "assets/sonarr.svg"
         url:  "https://sonarr.drak3.io"
         target: "_blank"
 
@@ -174,7 +173,7 @@ services:
         target: "_blank"
 
       - name: "Jackett"
-        icon: "fas fa-tshirt"
+        icon: "assets/jackett.png"
         url:  "https://jackett.drak3.io"
         target: "_blank"
 
@@ -188,22 +187,22 @@ services:
         target: "_blank"
 
       - name: "Minio"
-        logo: "assets/minio.jpg"
+        logo: "assets/minio.png"
         url:  "https://s3.drak3.io/"
         target: "_blank"
 
       - name: "InfluxDB / Chronograf"
-        logo: "assets/influxdata-logo.svg"
+        logo: "assets/influxdb.svg"
         url:  "https://influx.drak3.io/"
         target: "_blank"
 
       - name: "Grafana"
-        logo: "assets/grafana.png"
+        logo: "assets/grafana.svg"
         url:  "https://grafana.drak3.io/"
         target: "_blank"
 
       - name: "Unifi Protect (feeds)"
-        logo: "assets/unifi_logo.png"
+        logo: "assets/unifi.png"
         url:  "https://nvr.drak3.io"
         target: "_blank"
 
@@ -212,22 +211,22 @@ services:
     items:
 
       - name: "Jenkins"
-        logo: "assets/jenkins.svg"
+        logo: "assets/jenkins.png"
         url:  "https://jenkins.drak3.io/"
         target: "_blank"
 
       - name: "Gitea"
-        logo: "assets/Gitea_Logo.svg"
+        logo: "assets/gitea.svg"
         url:  "https://git.drak3.io/"
         target: "_blank"
 
       - name: "VS Code"
-        icon: "fas fa-code"
+        icon: "assets/vscode.svg"
         url:  "https://code.drak3.io"
         target: "_blank"
 
       - name: "Portainer"
-        logo: "assets/docker.png"
+        logo: "assets/portainer.png"
         url:  "https://portainer.drak3.io/"
         target: "_blank"
 
@@ -246,12 +245,12 @@ services:
         target: "_blank"
 
       - name: "Singularity"
-        logo: "assets/Pi-hole_vector_logo.svg.png"
+        logo: "assets/pihole.png"
         url:  "https://pihole.drak3.io/admin/index.php"
         target: "_blank"
 
       - name: "Event Horizon"
-        logo: "assets/Pi-hole_vector_logo.svg.png"
+        logo: "assets/pihole.png"
         url:  "https://pihole2.drak3.io/admin/index.php"
         target: "_blank"
 
@@ -260,32 +259,32 @@ services:
     items:
     
       - name: "Scripts"
-        icon: "fab fa-github"
+        icon: "assets/github.png"
         url:  "https://github.com/educatedCaveman/scripts"
         target: "_blank"
     
       - name: "Dotfiles"
-        icon: "fab fa-github"
+        icon: "assets/github.png"
         url:  "https://github.com/educatedCaveman/dotfiles"
         target: "_blank"
     
       - name: "Ansible"
-        icon: "fab fa-github"
+        icon: "assets/github.png"
         url:  "https://github.com/educatedCaveman/ansible"
         target: "_blank"
     
       - name: "Docker"
-        icon: "fab fa-github"
+        icon: "assets/github.png"
         url:  "https://github.com/educatedCaveman/docker-lab"
         target: "_blank"
     
       - name: "Jenkins"
-        icon: "fab fa-github"
+        icon: "assets/github.png"
         url:  "https://github.com/educatedCaveman/Jenkins"
         target: "_blank"
     
       - name: "Documentation"
-        icon: "fab fa-github"
+        icon: "assets/github.png"
         url:  "https://github.com/educatedCaveman/Jenkins"
         target: "_blank"
 
@@ -294,22 +293,22 @@ services:
     items:
 
       - name: "Guacamole (DEV)"
-        logo: "assets/guacamole-logo.png"
+        logo: "assets/guacamole.png"
         url:  "https://guac.dev.drak3.io"
         target: "_blank"
 
       - name: "HandBrake"
-        logo: "assets/HandBrake_Icon.png"
+        logo: "assets/handbrake.png"
         url:  "https://hb.dev.drak3.io"
         target: "_blank"
 
       - name: "YouTube DL (DEV)"
-        icon: "fab fa-youtube"
+        icon: "assets/youtubedl.png"
         url:  "https://ytdl.dev.drak3.io"
         target: "_blank"
 
       - name: "Ombi"
-        logo: "assets/ombi_icon.png"
+        logo: "assets/ombi.png"
         url:  "https://ombi.dev.drak3.io"
         target: "_blank"
 
@@ -319,12 +318,12 @@ services:
         target: "_blank"
 
       - name: "VS Code (DEV)"
-        icon: "fas fa-code"
+        icon: "assets/vscode.svg"
         url:  "https://code.dev.drak3.io"
         target: "_blank"
 
       - name: "Portainer (DEV)"
-        logo: "assets/docker.png"
+        logo: "assets/portainer.png"
         url:  "https://portainer.dev.drak3.io/"
         target: "_blank"
 
@@ -333,137 +332,137 @@ services:
     items:
     
       - name: "Tesseract"
-        logo: "assets/netdata_pve.svg"
+        logo: "assets/netdata.png"
         url:  "https://tesseract.srv:19999"
         target: "_blank"
     
       - name: "Nextcloud"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://nextcloud.vm:19999"
         target: "_blank"
     
       - name: "Moria"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://moria.vm:19999"
         target: "_blank"
     
       - name: "GitLab"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://gitlab.vm:19999"
         target: "_blank"
     
       - name: "APT Mirror"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://apt-mirror.vm:19999"
         target: "_blank"
     
       - name: "APT Cache"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://apt-cache.vm:19999"
         target: "_blank"
     
       - name: "Plex"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://plex.vm:19999"
         target: "_blank"
     
       - name: "Singularity"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://singularity.vm:19999"
         target: "_blank"
     
       - name: "Jenkins"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://jenkins.lab:19999"
         target: "_blank"
     
       - name: "Swarm API LB (PRD)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://swarm-api-lb.vm:19999"
         target: "_blank"
     
       - name: "Swarm Manager 1 (PRD)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://sevastopol-manager-01.vm:19999"
         target: "_blank"
     
       - name: "Swarm Manager 2 (PRD)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://sevastopol-manager-02.vm:19999"
         target: "_blank"
     
       - name: "Swarm Manager 3 (PRD)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://sevastopol-manager-03.vm:19999"
         target: "_blank"
     
       - name: "Swarm Worker 1 (PRD)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://sevastopol-worker-01.vm:19999"
         target: "_blank"
     
       - name: "Swarm Worker 2 (PRD)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://sevastopol-worker-02.vm:19999"
         target: "_blank"
     
       - name: "Swarm Worker 3 (PRD)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://sevastopol-worker-03.vm:19999"
         target: "_blank"
     
       - name: "Swarm Worker 4 (PRD)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://sevastopol-worker-04.vm:19999"
         target: "_blank"
     
       - name: "Swarm API LB (DEV)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://swarm-api-lb.lab:19999"
         target: "_blank"
     
       - name: "Swarm Manager 1 (DEV)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://lv426-manager-01.lab:19999"
         target: "_blank"
     
       - name: "Swarm Manager 2 (DEV)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://lv426-manager-02.lab:19999"
         target: "_blank"
     
       - name: "Swarm Manager 3 (DEV)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://lv426-manager-03.lab:19999"
         target: "_blank"
     
       - name: "Swarm Worker 1 (DEV)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://lv426-worker-01.lab:19999"
         target: "_blank"
     
       - name: "Swarm Worker 2 (DEV)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://lv426-worker-02.lab:19999"
         target: "_blank"
     
       - name: "Swarm Worker 3 (DEV)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://lv426-worker-03.lab:19999"
         target: "_blank"
     
       - name: "Swarm Worker 4 (DEV)"
-        logo: "assets/netdata_logo.svg"
+        logo: "assets/netdata.png"
         url:  "https://lv426-worker-04.lab:19999"
         target: "_blank"
     
       - name: "Event Horizon"
-        logo: "assets/netdata_pve.svg"
+        logo: "assets/netdata.png"
         url:  "https://event-horizon.srv:19999"
         target: "_blank"
     
       - name: "Dilithium"
-        logo: "assets/netdata_pve.svg"
+        logo: "assets/netdata.png"
         url:  "https://dilithium.srv:19999"
         target: "_blank"
 
