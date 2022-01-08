@@ -259,32 +259,32 @@ services:
     items:
     
       - name: "Scripts"
-        logo: "assets/vscode.svg"
+        logo: "assets/github.png"
         url:  "https://github.com/educatedCaveman/scripts"
         target: "_blank"
     
       - name: "Dotfiles"
-        logo: "assets/vscode.svg"
+        logo: "assets/github.png"
         url:  "https://github.com/educatedCaveman/dotfiles"
         target: "_blank"
     
       - name: "Ansible"
-        logo: "assets/vscode.svg"
+        logo: "assets/github.png"
         url:  "https://github.com/educatedCaveman/ansible"
         target: "_blank"
     
       - name: "Docker"
-        logo: "assets/vscode.svg"
+        logo: "assets/github.png"
         url:  "https://github.com/educatedCaveman/docker-lab"
         target: "_blank"
     
       - name: "Jenkins"
-        logo: "assets/vscode.svg"
+        logo: "assets/github.png"
         url:  "https://github.com/educatedCaveman/Jenkins"
         target: "_blank"
     
       - name: "Documentation"
-        logo: "assets/vscode.svg"
+        logo: "assets/github.png"
         url:  "https://github.com/educatedCaveman/Jenkins"
         target: "_blank"
 
