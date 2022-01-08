@@ -65,7 +65,7 @@ services:
     icon: "fas fa-server"
     items:
       - name: "Mobius"
-        logo: "assets/TrueNAS-Core.png"
+        logo: "https://github.com/walkxcode/dashboard-icons/blob/master/png/truenas.png?raw=true"
         url:  "https://mobius.drak3.io"
         target: "_blank"
 
