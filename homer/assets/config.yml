@@ -68,6 +68,7 @@ services:
         logo: "https://github.com/walkxcode/dashboard-icons/blob/master/png/truenas.png?raw=true"
         url:  "https://mobius.drak3.io"
         target: "_blank"
+        
 
       - name: "Tesseract"
         logo: "assets/Proxmox-logo.png"
