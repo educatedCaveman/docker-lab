@@ -1,0 +1,3 @@
+[submodule "homer/dashboard-icons"]
+	path = homer/dashboard-icons
+	url = git@github.com:walkxcode/dashboard-icons.git
