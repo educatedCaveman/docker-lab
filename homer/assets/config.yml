@@ -254,6 +254,11 @@ services:
         url:  "https://pihole2.drak3.io/admin/index.php"
         target: "_blank"
 
+      - name: "Home-Assistant"
+        logo: "assets/home-assistant.svg"
+        url:  "https://home-assistant.drak3.io/"
+        target: "_blank"
+
   - name: "GitHub"
     icon: "fab fa-github"
     items:
