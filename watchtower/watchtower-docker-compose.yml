@@ -22,7 +22,7 @@ services:
       restart_policy:
         condition: on-failure
     secrets:
-      - SLACK_WEBHOOK_WATCHTOWER
+      - DISCORD_WEBHOOK_WATCHTOWER
 
 # the secret is a discord webhook with /slack appended
 secrets:

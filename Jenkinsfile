@@ -8,6 +8,7 @@ pipeline {
         PORTAINER_PRD_PASS = credentials('PORTAINER_PRD_PASS')
         LOCAL_REPO_DEV = '/var/lib/jenkins/workspace/docker_dev_test'
         LOCAL_REPO_PRD = '/var/lib/jenkins/workspace/docker_master'
+        WEBHOOK = credentials('JENKINS_DISCORD')
     }
 
     //triggering periodically so the code is always present
@@ -80,6 +81,17 @@ pipeline {
                 echo 'deploy docker compose to portainer'
                 sh 'python3 ${SCRIPTS_REPO}/docker/portainer_control_swarm.py --env=PRD --repo=${LOCAL_REPO_PRD} --action=UP'
             }
+        }
+    }
+    post {
+        always {
+            discordSend \
+                description: "${JOB_NAME} - build #${BUILD_NUMBER}", \
+                // footer: "Footer Text", \
+                // link: env.BUILD_URL, \
+                result: currentBuild.currentResult, \
+                // title: JOB_NAME, \
+                webhookURL: "${WEBHOOK}"
         }
     }
 }
