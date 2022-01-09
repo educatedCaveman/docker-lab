@@ -8,6 +8,7 @@ pipeline {
         PORTAINER_PRD_PASS = credentials('PORTAINER_PRD_PASS')
         LOCAL_REPO_DEV = '/var/lib/jenkins/workspace/docker_dev_test'
         LOCAL_REPO_PRD = '/var/lib/jenkins/workspace/docker_master'
+        WEBHOOK = credentials('JENKINS_DISCORD')
     }
 
     //triggering periodically so the code is always present
