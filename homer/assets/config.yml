@@ -186,6 +186,11 @@ services:
     icon: "fas fa-server"
     items:
 
+      - name: "Uptime-Kuma"
+        logo: "assets/uptime-kuma.png"
+        url:  "https://uptime.drak3.io/"
+        target: "_blank"
+
       - name: "Syncthing"
         logo: "assets/syncthing.png"
         url:  "https://sync.drak3.io/syncthing/"
@@ -335,6 +340,11 @@ services:
       - name: "Portainer (DEV)"
         logo: "assets/portainer.png"
         url:  "https://portainer.dev.drak3.io/"
+        target: "_blank"
+
+      - name: "Uptime-Kuma (DEV)"
+        logo: "assets/uptime-kuma.png"
+        url:  "https://uptime.dev.drak3.io/"
         target: "_blank"
 
   - name: "Netdata"
