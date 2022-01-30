@@ -172,6 +172,11 @@ services:
         url:  "https://lidarr.drak3.io"
         target: "_blank"
 
+      - name: "Bazarr (Subtitles)"
+        logo: "assets/bazarr.png"
+        url:  "https://bazarr.drak3.io"
+        target: "_blank"
+
       - name: "Jackett"
         logo: "assets/jackett.png"
         url:  "https://jackett.drak3.io"
