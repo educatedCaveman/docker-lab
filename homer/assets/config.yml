@@ -188,7 +188,8 @@ services:
 
       - name: "Uptime-Kuma"
         logo: "assets/uptime-kuma.png"
-        url:  "https://uptime.drak3.io/"
+        # url:  "https://uptime.drak3.io/"
+        url:  "https://192.168.12.20:3001/"
         target: "_blank"
 
       - name: "Syncthing"
@@ -344,7 +345,8 @@ services:
 
       - name: "Uptime-Kuma (DEV)"
         logo: "assets/uptime-kuma.png"
-        url:  "https://uptime.dev.drak3.io/"
+        # url:  "https://uptime.dev.drak3.io/"
+        url:  "https://192.168.13.20:3001/"
         target: "_blank"
 
   - name: "Netdata"
