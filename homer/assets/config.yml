@@ -75,7 +75,7 @@ links:
 
   # Namecheap
   - name: "Namecheap"
-    icon: "far fa-dice-d8"
+    icon: "fas fa-cubes"
     url:  "https://ap.www.namecheap.com"
     target: "_blank"
 
