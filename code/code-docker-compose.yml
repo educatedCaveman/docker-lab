@@ -14,7 +14,7 @@ services:
     volumes:
       - /docker/docker-lab/code/config:/config:Z
     ports:
-      - 9443:8443
+      - 8443:8443
     restart: unless-stopped
     deploy:
       restart_policy:
